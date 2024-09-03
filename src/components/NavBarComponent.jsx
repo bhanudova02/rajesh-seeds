@@ -1,26 +1,15 @@
-import {
-    Sheet,
-    SheetContent,
-    SheetDescription,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet";
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
+import {Sheet,SheetContent,SheetDescription,SheetHeader,SheetTitle,SheetTrigger,} from "@/components/ui/sheet";
+import { Accordion,AccordionContent,AccordionItem,AccordionTrigger,} from "@/components/ui/accordion";
 import { AccordionData } from "@/lib/data";
+import { CgMenuRight } from "react-icons/cg";
 
 export function NavBarComponent() {
-
-
     return (
         <nav>
             <Sheet  >
-                <SheetTrigger>Open</SheetTrigger>
+                <SheetTrigger>
+                    <CgMenuRight className="text-2xl"/>
+                </SheetTrigger>
                 <SheetContent side={"left"}>
                     <img src="/logo.png" alt="Logo" className="w-24" />
                     <SheetHeader>
@@ -61,7 +50,6 @@ export function NavBarComponent() {
                     </div>
                 </SheetContent>
             </Sheet>
-
         </nav>
     );
 }

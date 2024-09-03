@@ -72,9 +72,17 @@ export const Carousel_Home_Data = [
 
 ];
 
-export const Who_We_Are = [
-    { "image": "/cotton_icon.png", "title": "COTTON - 55MT/HOUR" },
-    { "image": "/corn_icon.png", "title": "CORN - 52MT/HOUR" },
-    { "image": "/millet_icon.png", "title": "MILLET - 45MT/HOUR" },
-    { "image": "/sunflower_icon.png", "title": "SUNFLOWER - 58MT/HOUR" }
-]
+export const AccordionData = [
+    {
+        "title": "AboutUs",
+        "items": [
+            { title: "Company Profile", mtCount: "px-4 mt-4 mb-1" }, { title: "Vision & Mission", mtCount: "px-4 mb-1" }, { title: "Global Presence", mtCount: "px-4 mb-1" }, { title: "Prestigious Clients", mtCount: "px-4" }
+        ]
+    },
+    {
+        "title": "Services",
+        "items": [
+            { title: "Seed Processing", mtCount: "px-4 mt-4 mb-1" }, { title: "Seed to Seed", mtCount: "px-4 mb-1" }, { title: "GFood Processing", mtCount: "px-4 mb-1" }, { title: "PSPL Feeds", mtCount: "px-4 mb-1" }, { title: "Agro Chemicals", mtCount: 'px-4' }
+        ]
+    }
+];

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavBarComponent } from './NavBarComponent';
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { NavbarList } from './NavbarListc';
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [logo, setLogo] = useState("/white_logo.png");
@@ -45,14 +46,7 @@ export default function Header() {
                     <div >
                         <img src={logo} alt="Logo" className="w-24 md:w-28 h-auto" />
                     </div>
-                    <ul data-aos="zoom-in" data-aos-delay="800" className="hidden md:flex items-center  md:gap-6 lg:gap-8 font-semibold">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Infrastructure</li>
-                        <li>Careers</li>
-                        <li>Contact Us</li>
-                    </ul>
+                    <NavbarList/>
                     <div className='md:hidden block'>
                         <NavBarComponent />
                     </div>

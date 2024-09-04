@@ -11,7 +11,7 @@ export function NavBarComponent() {
                 <SheetTrigger>
                     <CgMenuRight className="text-2xl text-white" />
                 </SheetTrigger>
-                <SheetContent side={"left"} className="w-64 bg-gray-800 text-white">
+                <SheetContent side={"left"} className="w-64 bg-gray-800 text-white max-h-screen overflow-y-auto">
                     <div className="pb-4 border-b border-gray-700">
                         <img src="/logo.png" alt="Logo" className="w-24" />
                     </div>
@@ -21,7 +21,7 @@ export function NavBarComponent() {
                         </SheetDescription>
                     </SheetHeader>
                     <div className="my-10">
-                        <div className="text-white max-h-[35rem] overflow-y-auto">
+                        <div className="text-white">
                             <Accordion type="single" collapsible>
                                 <ul className="space-y-4">
                                     <li className="bg-neutral-900 rounded-md p-2">Home</li>

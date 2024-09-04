@@ -68,8 +68,7 @@ export function GlobalPresence() {
                                 </p>
                                 <h2 className="font-bold text-lg text-blue-700 mt-4">We operate in the following countries</h2>
                                 <div className="text-start md:text-center lg:text-start flex lg:block items-center gap-2 mt-1">
-
-                                    <img src={countries[currentIndex].flag} alt={countries[currentIndex].name} className="w-10 h-10" />
+                                    <img src={countries[currentIndex].flag} alt={countries[currentIndex].name} className="w-12 h-10" />
                                     <h2 className="text-4xl md:text-5xl font-bold text-green-600 dark:text-white">
                                         {countries[currentIndex].name}
                                     </h2>

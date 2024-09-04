@@ -9,7 +9,7 @@ export function NavBarComponent() {
         <nav>
             <Sheet>
                 <SheetTrigger>
-                    <CgMenuRight className="text-2xl text-white" />
+                    <CgMenuRight className="text-2xl" />
                 </SheetTrigger>
                 <SheetContent side={"left"} className="w-64 bg-gray-800 text-white max-h-screen overflow-y-auto">
                     <div className="pb-4 border-b border-gray-700">

@@ -39,7 +39,7 @@ export function WhatWeOffer() {
                         additionalTransfrom={0}
                         arrows={true}
                         autoPlay={true}
-                        autoPlaySpeed={1700}
+                        autoPlaySpeed={3000}
                         centerMode={false}
                         infinite
                         responsive={responsiveMultiCard}

@@ -1,8 +1,28 @@
-import Globe from "@/components/magicui/globe";
+import { useState, useEffect } from "react";
 import NumberTicker from "../magicui/number-ticker";
-import WordRotate from "../magicui/word-rotate";
 
 export function GlobalPresence() {
+    const countries = [
+        { name: "India", flag: "/in_flag.png" },
+        { name: "Bangladesh", flag: "/ba_flag.png" },
+        { name: "Indonesia", flag: "/indonesia_flg.png" },
+        { name: "Philippines", flag: "/philippines_flag.png" },
+        { name: "Singapore", flag: "/singapore_flag.png" },
+        { name: "Vietnam", flag: "/vietnam_flag.png" },
+        { name: "Ghana", flag: "/ghana_flag.png" },
+        { name: "Nigeria", flag: "/nigeria_flag.png" },
+        { name: "Zambia", flag: "/zambia_flag.png" }
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % countries.length);
+        }, 3000); // Change every 3 seconds
+        return () => clearInterval(interval);
+    }, [countries.length]);
+
     return (
         <div className="bg-[#E1E2E2]">
             <div className="w-[90%] md:max-w-7xl mx-auto py-20">
@@ -34,9 +54,9 @@ export function GlobalPresence() {
                     </div>
                     <div className="flex flex-col lg:flex-row mt-8">
                         <div className="bg-blue-100 rounded-md p-2 w-full lg:w-[60%] ">
-                            <img src="/WorldMap.PNG" alt="Map" className="w-full h-full object-cover     rounded-md" />
+                            <img src="/WorldMap.PNG" alt="Map" className="w-full h-full object-cover rounded-md" />
                         </div>
-                        <div className="w-full lg:w-[40%] px-4 flex justify-center items-center">
+                        <div className="w-full lg:w-[40%] px-4">
                             <div>
                                 <h2 className="text-2xl font-bold">
                                     $100 MILLION
@@ -46,12 +66,13 @@ export function GlobalPresence() {
                                 <p className="mt-1">
                                     PSPL has established a leadership position in the Indian Seed processing industry. We are now in the process of expanding these infrastructure services in seeds, chemicals and other allied sectors to our partners in Asia and Africa.
                                 </p>
-                                <div className="mt-6 text-start md:text-center lg:text-start">
-                                    <h2 className="font-bold text-lg text-blue-700">We operate in the following countries</h2>
-                                    <WordRotate
-                                        className="text-4xl md:text-6xl font-bold text-green-600 dark:text-white"
-                                        words={["India", "Bangladesh","Indonesia","Philippines","Singapore","Vietnam","Ghana","Nigeria","Zambia"]}
-                                    />
+                                <h2 className="font-bold text-lg text-blue-700 mt-4">We operate in the following countries</h2>
+                                <div className="text-start md:text-center lg:text-start flex lg:block items-center gap-2 mt-1">
+
+                                    <img src={countries[currentIndex].flag} alt={countries[currentIndex].name} className="w-10 h-10" />
+                                    <h2 className="text-4xl md:text-5xl font-bold text-green-600 dark:text-white">
+                                        {countries[currentIndex].name}
+                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -59,5 +80,5 @@ export function GlobalPresence() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

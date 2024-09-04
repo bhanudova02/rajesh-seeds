@@ -9,7 +9,7 @@ const HomeCardComponent = ({ title, description, images, padding }) => {
                 className={`w-[100%] h-[100%] object-contain p-${padding}`}
             />
         </div>
-        <h1 className="mt-[1.3rem] text-[22px] text-black font-semibold">{title}</h1>
+        <h1 className="mt-[1.3rem] text-[#192e64] text-[22px] font-semibold">{title}</h1>
         <p className="mt-[0.5rem] text-black opacity-70 text-sm">{description}</p>
     </div>
 }

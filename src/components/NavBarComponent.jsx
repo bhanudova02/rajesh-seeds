@@ -54,7 +54,8 @@ export function NavBarComponent() {
                         </div>
                     </div>
                     <div className="border-t border-gray-700 pt-4">
-                        <div className="flex justify-around text-xl">
+                        <h2 className="px-3 mb-2">Contact Us</h2>
+                        <div className="grid grid-cols-4 px-3">
                             <FaFacebookSquare className="text-3xl " />
                             <FaInstagram className="text-3xl " />
                             <FaWhatsapp className="text-3xl " />

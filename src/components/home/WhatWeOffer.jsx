@@ -29,7 +29,7 @@ export function WhatWeOffer() {
         { id: 5, title: "Agro Chemicals", description: "We provide top-tier chemical production with cutting-edge, high-throughput facilities for enterprises.", images: "/HomeAgroChemical.png", padding: "6" },
     ];
     return (
-        <div className="bg-[#F2F2F2]">
+        <div className="bg-[#F2F2F2] md:text-lg">
             <div className="w-full mx-auto py-20">
                 <h1 className="text-center text-3xl md:text-4xl font-bold">
                     What Services<span className="text-green-600"> We Offer</span>

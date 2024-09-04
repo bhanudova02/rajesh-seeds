@@ -1,5 +1,3 @@
-import { BiShoppingBag } from "react-icons/bi";
-import { FaStar } from "react-icons/fa";
 const HomeCardComponent = ({ title, description, images, padding }) => {
     return <div className="bg-white p-6 rounded-lg m-3">
         <div className="w-[200px] mx-auto h-[200px]">

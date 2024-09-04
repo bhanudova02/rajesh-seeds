@@ -2,7 +2,7 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion";
 import { AccordionData } from "@/lib/data";
 import { CgMenuRight } from "react-icons/cg";
-import WordRotate from "@/components/magicui/word-rotate";
+import { FaFacebookSquare, FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
  
 export function NavBarComponent() {
     return (
@@ -46,14 +46,14 @@ export function NavBarComponent() {
                                 <li className="bg-neutral-900 rounded-md p-2">Infrastructure</li>
                                 <li className="bg-neutral-900 rounded-md p-2">Careers</li>
                                 <li className="bg-neutral-900 rounded-md p-2">Contact Us</li>
+                                <li className="bg-neutral-900 rounded-md p-2">Privacy Policy</li>
+                                <li className="bg-neutral-900 rounded-md py-2 px-4 flex justify-between">
+                                    <FaFacebookSquare className="text-3xl "/>
+                                    <FaInstagram className="text-3xl "/>
+                                    <FaWhatsapp className="text-3xl "/>
+                                    <FaTelegram className="text-3xl "/>
+                                </li>
                             </ul>
-                            <div className="px-4 py-4 bg-neutral-900/30 mt-10 rounded-md">
-                                <h2 className="text-center font-bold text-sm">Prasad Seeds Will Be</h2>
-                                <WordRotate
-                                    className="text-xl font-bold text-center text-green-400"
-                                    words={["Innovative", "Visionary","A Global Leader","Quality Focused","Sustainably Growing","Customer-Centric"]}
-                                />
-                            </div>
                         </Accordion>
                     </div>
                 </SheetContent>

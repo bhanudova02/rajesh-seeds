@@ -76,7 +76,7 @@ export const AccordionData = [
     {
         "title": "AboutUs",
         "items": [
-            { title: "Company Profile", mtCount: "px-4 mt-4 mb-1" }, { title: "Vision & Mission", mtCount: "px-4 mb-1" }, { title: "Global Presence", mtCount: "px-4 mb-1" }, { title: "Prestigious Clients", mtCount: "px-4" }
+           { title: "Vision & Mission", mtCount: "px-4 mt-4 mb-1" }, { title: "Global Presence", mtCount: "px-4 mb-1" }, { title: "Prestigious Clients", mtCount: "px-4" }
         ]
     },
     {

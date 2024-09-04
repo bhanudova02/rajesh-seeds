@@ -2,8 +2,8 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion";
 import { AccordionData } from "@/lib/data";
 import { CgMenuRight } from "react-icons/cg";
-import { FaTelegram, FaWhatsapp } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
+import WordRotate from "@/components/magicui/word-rotate";
+ 
 export function NavBarComponent() {
     return (
         <nav>
@@ -47,10 +47,12 @@ export function NavBarComponent() {
                                 <li className="bg-neutral-900 rounded-md p-2">Careers</li>
                                 <li className="bg-neutral-900 rounded-md p-2">Contact Us</li>
                             </ul>
-                            <div className="bg-neutral-900 rounded-md mt-8 space-y-4 p-4 flex justify-center items-center flex-col">
-                                <button className="flex items-center bg-green-600 py-2 px-8 w-fit gap-1 rounded-full text-sm"><FaWhatsapp className="text-2xl"/> Chat With Us</button>
-                                <button className="flex items-center bg-[#32A9E1] py-2 px-8 w-fit gap-1 rounded-full text-sm"><FaTelegram className="text-2xl"/> Chat With Us</button>
-                                <button className="flex items-center bg-blue-600 py-2 px-8 w-fit gap-1 rounded-full text-sm"><IoCall className="text-2xl"/> Make A Call</button>
+                            <div className="px-4 py-4 bg-neutral-900/30 mt-10 rounded-md">
+                                <h2 className="text-center font-bold text-sm">Prasad Seeds Will Be</h2>
+                                <WordRotate
+                                    className="text-xl font-bold text-center text-green-400"
+                                    words={["Innovative", "Visionary","A Global Leader","Quality Focused","Sustainably Growing","Customer-Centric"]}
+                                />
                             </div>
                         </Accordion>
                     </div>

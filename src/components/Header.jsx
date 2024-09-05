@@ -27,7 +27,7 @@ export default function Header() {
 
     return (
         <header>
-            <div className={`fixed top-0 z-50 w-full  transition-all duration-500 ${isScrolled ? 'bg-white text-black animate-slide-down shadow shadow-green-500/20' : 'bg-gray-200/5 text-white'}`}>
+            <div className={`fixed top-0 z-10 w-full  transition-all duration-500 ${isScrolled ? 'bg-white text-black animate-slide-down shadow shadow-green-500/20' : 'bg-gray-200/5 text-white '}`}>
                 <div className={`bg-[#E2E8F0] p-3 text-[#455D9E] transition-all duration-500 justify-between ${topDiv}`}>
                     <div className='flex justify-between px-1 md:px-10'>
                         <div className='flex items-center gap-1'>

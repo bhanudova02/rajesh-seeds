@@ -1,4 +1,5 @@
 import './App.css'
+import { Footer } from './components/Footer'
 import Header from './components/Header'
 import { AboutUs } from './components/home/AboutUs'
 import { GlobalPresence } from './components/home/GlobalPresence'
@@ -19,6 +20,7 @@ function App() {
       <GlobalPresence/>
       <PrestigiousClients/>
       <OurJourney/>
+      <Footer/>
     </main>
   )
 }

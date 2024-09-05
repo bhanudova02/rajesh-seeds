@@ -2,7 +2,7 @@ import { FaAngleDoubleDown } from "react-icons/fa";
 
 export function OurJourney() {
     return (
-        <div className="bg-white h-screen">
+        <div className="bg-white">
             <div className="w-[90%] md:max-w-7xl mx-auto py-20">
                 <h2 className="mb-8 text-center text-2xl md:text-5xl font-bold bg-gradient-to-r from-sky-900 to-green-600 text-transparent bg-clip-text">
                     Our Journey

@@ -1,56 +1,13 @@
 import NumberTicker from "../magicui/number-ticker";
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
+import { globalPresenceData } from "@/lib/data";
 
 export function GlobalPresence() {
 
-    const reviews = [
-        {
-            name: "India",
-            img: "/in_flag.png",
-        },
-        {
-            name: "Bangladesh",
-            img: "/ba_flag.png",
-        },
-        {
-            name: "Indonesia",
-            img: "/indonesia_flg.png",
-        },
-        {
-            name: "Philippines",
-            img: "/philippines_flag.png",
-        },
-        {
-            name: "Singapore",
-            img: "/singapore_flag.png",
-        },
-        {
-            name: "Vietnam",
-            img: "/vietnam_flag.png",
-        },
-        {
-            name: "Ghana",
-            img: "/ghana_flag.png",
-        },
-        {
-            name: "Nigeria",
-            img: "/nigeria_flag.png",
-        },
-        {
-            name: "Zambia",
-            img: "/zambia_flag.png",
-        }
-    ];
+    const firstRow = globalPresenceData.slice(0, globalPresenceData.length / 2);
 
-    const firstRow = reviews.slice(0, reviews.length / 2);
-
-    const ReviewCard = ({
-        img,
-        name,
-        username,
-        body,
-    }) => {
+    const ReviewCard = ({ img, name, }) => {
         return (
             <figure
                 className={cn(
@@ -64,7 +21,7 @@ export function GlobalPresence() {
                 <div className="flex flex-row items-center gap-2">
                     <img className="rounded-full" width="32" height="32" alt="" src={img} />
                     <div className="flex flex-col">
-                        <figcaption className="text-4xl font-semibold text-black">
+                        <figcaption className="text-lg md:text-4xl font-semibold text-black">
                             {name}
                         </figcaption>
                     </div>
@@ -73,22 +30,10 @@ export function GlobalPresence() {
         );
     };
 
-    const countries = [
-        { name: "India", flag: "/in_flag.png" },
-        { name: "Bangladesh", flag: "/ba_flag.png" },
-        { name: "Indonesia", flag: "/indonesia_flg.png" },
-        { name: "Philippines", flag: "/philippines_flag.png" },
-        { name: "Singapore", flag: "/singapore_flag.png" },
-        { name: "Vietnam", flag: "/vietnam_flag.png" },
-        { name: "Ghana", flag: "/ghana_flag.png" },
-        { name: "Nigeria", flag: "/nigeria_flag.png" },
-        { name: "Zambia", flag: "/zambia_flag.png" }
-    ];
-
     return (
         <div className="bg-[#E1E2E2]">
             <div className="w-[90%] md:max-w-7xl mx-auto py-20">
-                <h1 className="text-center text-3xl md:text-4xl font-bold text-blue-900">
+                <h1 className="text-center text-3xl md:text-5xl font-bold text-blue-900">
                     Global Presence
                 </h1>
                 <div className="px-0 md:px-0 lg:px-20">

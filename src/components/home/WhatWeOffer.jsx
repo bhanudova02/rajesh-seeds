@@ -31,7 +31,7 @@ export function WhatWeOffer() {
     return (
         <div className="bg-[#F2F2F2] md:text-lg">
             <div className="w-full mx-auto py-20">
-                <h1 className="text-center text-3xl md:text-4xl font-bold">
+                <h1 className="text-center text-3xl md:text-5xl font-bold">
                     What Services<span className="text-green-600"> We Offer</span>
                 </h1>
                 <div className='w-[90%] mt-[1rem] mx-auto'>

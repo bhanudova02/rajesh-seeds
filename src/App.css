@@ -14,19 +14,3 @@
 .animate-slide-down {
     animation: slideDown 0.5s ease-out;
 }
-
-
-
-
-/* Flag Transform */
-.country-transition {
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  
-  .country-enter {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  

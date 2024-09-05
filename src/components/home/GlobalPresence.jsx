@@ -1,7 +1,78 @@
-import { useState, useEffect } from "react";
 import NumberTicker from "../magicui/number-ticker";
+import { cn } from "@/lib/utils";
+import Marquee from "@/components/magicui/marquee";
 
 export function GlobalPresence() {
+
+    const reviews = [
+        {
+            name: "India",
+            img: "/in_flag.png",
+        },
+        {
+            name: "Bangladesh",
+            img: "/ba_flag.png",
+        },
+        {
+            name: "Indonesia",
+            img: "/indonesia_flg.png",
+        },
+        {
+            name: "Philippines",
+            img: "/philippines_flag.png",
+        },
+        {
+            name: "Singapore",
+            img: "/singapore_flag.png",
+        },
+        {
+            name: "Vietnam",
+            img: "/vietnam_flag.png",
+        },
+        {
+            name: "Ghana",
+            img: "/ghana_flag.png",
+        },
+        {
+            name: "Nigeria",
+            img: "/nigeria_flag.png",
+        },
+        {
+            name: "Zambia",
+            img: "/zambia_flag.png",
+        }
+    ];
+
+    const firstRow = reviews.slice(0, reviews.length / 2);
+
+    const ReviewCard = ({
+        img,
+        name,
+        username,
+        body,
+    }) => {
+        return (
+            <figure
+                className={cn(
+                    "relative w-fit cursor-pointer overflow-hidden rounded-xl border py-3 px-4",
+                    // light styles
+                    "border-gray-950/[.1] bg-gray-950/[.01] shadow-md shadow-blu hover:bg-gray-950/[.05]",
+                    // dark styles
+                    "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+                )}
+            >
+                <div className="flex flex-row items-center gap-2">
+                    <img className="rounded-full" width="32" height="32" alt="" src={img} />
+                    <div className="flex flex-col">
+                        <figcaption className="text-4xl font-semibold text-black">
+                            {name}
+                        </figcaption>
+                    </div>
+                </div>
+            </figure>
+        );
+    };
+
     const countries = [
         { name: "India", flag: "/in_flag.png" },
         { name: "Bangladesh", flag: "/ba_flag.png" },
@@ -13,15 +84,6 @@ export function GlobalPresence() {
         { name: "Nigeria", flag: "/nigeria_flag.png" },
         { name: "Zambia", flag: "/zambia_flag.png" }
     ];
-
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % countries.length);
-        }, 3000); // Change every 3 seconds
-        return () => clearInterval(interval);
-    }, [countries.length]);
 
     return (
         <div className="bg-[#E1E2E2]">
@@ -67,11 +129,14 @@ export function GlobalPresence() {
                                     PSPL has established a leadership position in the Indian Seed processing industry. We are now in the process of expanding these infrastructure services in seeds, chemicals and other allied sectors to our partners in Asia and Africa.
                                 </p>
                                 <h2 className="font-bold text-lg text-blue-700 mt-4">We operate in the following countries</h2>
-                                <div className="text-start md:text-center lg:text-start flex lg:block items-center gap-2 mt-1">
-                                    <img src={countries[currentIndex].flag} alt={countries[currentIndex].name} className="w-12 h-10" />
-                                    <h2 className="text-4xl md:text-5xl font-bold text-green-600 dark:text-white">
-                                        {countries[currentIndex].name}
-                                    </h2>
+                                <div>
+                                    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+                                        <Marquee pauseOnHover className="[--duration:20s]">
+                                            {firstRow.map((review) => (
+                                                <ReviewCard key={review.username} {...review} />
+                                            ))}
+                                        </Marquee>
+                                    </div>
                                 </div>
                             </div>
                         </div>

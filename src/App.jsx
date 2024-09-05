@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header'
 import { AboutUs } from './components/home/AboutUs'
 import { GlobalPresence } from './components/home/GlobalPresence'
+import { OurJourney } from './components/home/OurJourney'
 import { PrestigiousClients } from './components/home/PrestigiousClients'
 import { WhatWeOffer } from './components/home/WhatWeOffer'
 import { Slider } from './components/Slider'
@@ -17,6 +18,7 @@ function App() {
       <WhatWeOffer/>
       <GlobalPresence/>
       <PrestigiousClients/>
+      <OurJourney/>
     </main>
   )
 }

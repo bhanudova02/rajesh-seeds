@@ -66,13 +66,13 @@ export function PrestigiousClients() {
 
                 <div className="relative flex mt-8 w-full flex-col items-center justify-center overflow-hidden rounded-lg  ">
                     <Marquee pauseOnHover className="[--duration:20s]">
-                        {firstRow.map((review) => (
-                            <ReviewCard key={review.username} {...review} />
+                        {firstRow.map((review, index) => (
+                            <ReviewCard key={`first-row-${index}`} {...review} />
                         ))}
                     </Marquee>
                     <Marquee reverse pauseOnHover className="[--duration:20s]">
-                        {secondRow.map((review) => (
-                            <ReviewCard key={review.username} {...review} />
+                        {secondRow.map((review, index) => (
+                            <ReviewCard key={`second-row-${index}`} {...review} />
                         ))}
                     </Marquee>
                 </div>

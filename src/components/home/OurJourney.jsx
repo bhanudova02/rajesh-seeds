@@ -27,7 +27,7 @@ export function OurJourney() {
                             muted
                             loop
                             playsInline
-                            className="md:absolute top-0 left-0 h-[50vh] object-cover md:h-full w-full  rounded-xl"
+                            className="md:absolute top-0 left-0 h-[50vh] object-cover md:h-full w-full  rounded-xl`"
                         ></video>
                         <div className="absolute inset-0 bg-black bg-opacity-70 rounded-xl p-10 flex justify-center items-center">
                             <div>

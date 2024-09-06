@@ -9,7 +9,6 @@ export function NavbarList() {
                         <h2>AboutUs</h2>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="absolute -left-8 ">
-                        <DropdownMenuItem>Company Profile</DropdownMenuItem>
                         <DropdownMenuItem>Vision & Mission</DropdownMenuItem>
                         <DropdownMenuItem>Global Presence</DropdownMenuItem>
                         <DropdownMenuItem>Prestigious Clients</DropdownMenuItem>

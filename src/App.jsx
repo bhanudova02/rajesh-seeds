@@ -10,38 +10,48 @@ import { VMVHero } from './components/about-us/VMVHero'
 import { VMV } from './components/about-us/VMV'
 import { GlobalPresenceHero } from './components/about-us/GlobalPresenceHero'
 import { GlobalPresenceSection } from './components/about-us/GlobalPresenceSection'
-
+import { OurClientsHero } from './components/about-us/OurClientsHero'
+import { OurPrestigiousClients } from './components/about-us/OurPrestigiousClients'
 function App() {
 
-  return (
-    <main>
-      <Routes>
-        <Route path="/" element={
-          <div>
-            <Slider />
-            <AboutUs />
-            <WhatWeOffer />
-            <GlobalPresence />
-            <PrestigiousClients />
-            <OurJourney />
-          </div>}
-        />
-        <Route path="vmv" element={<div>
-          <VMVHero />
-          <VMV />
-        </div>} />
+    return (
+      <main>
+        <Routes>
+          <Route path="/" element={
+            <div>
+              <Slider />
+              <AboutUs />
+              <WhatWeOffer />
+              <GlobalPresence />
+              <PrestigiousClients />
+              <OurJourney />
+            </div>}
+          />
+          <Route path="vmv" element={<div>
+            <VMVHero />
+            <VMV />
+          </div>} />
 
-        <Route path="gbl-presence" element={<div>
-          <GlobalPresenceHero />
-          <GlobalPresenceSection/>
-        </div>} />
+          <Route path="gblpresence" element={<div>
+            <GlobalPresenceHero />
+            <GlobalPresenceSection />
+          </div>} />
+
+
+          <Route path="ourclients" element={
+            <div>
+              <OurClientsHero />
+              <OurPrestigiousClients/>
+            </div>
+          } />
 
 
 
-      </Routes>
 
-    </main>
-  )
-}
+        </Routes>
+
+      </main>
+    )
+  }
 
 export default App

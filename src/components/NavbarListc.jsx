@@ -1,4 +1,5 @@
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem,DropdownMenuTrigger, } from "@/components/ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, } from "@/components/ui/dropdown-menu"
+import { Link } from "react-router-dom"
 export function NavbarList() {
     return (
         <div>
@@ -9,9 +10,9 @@ export function NavbarList() {
                         <h2>AboutUs</h2>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="absolute -left-8 ">
-                        <DropdownMenuItem>Vision & Mission</DropdownMenuItem>
-                        <DropdownMenuItem>Global Presence</DropdownMenuItem>
-                        <DropdownMenuItem>Prestigious Clients</DropdownMenuItem>
+                        <DropdownMenuItem><Link to="/vmv">Vision & Mission</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to="/gblpresence">Global Presence</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to="/ourclients">Prestigious Clients</Link></DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
                 <div className="cursor-pointer">

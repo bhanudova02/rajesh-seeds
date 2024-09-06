@@ -14,7 +14,7 @@ function App() {
   return (
     <main>
       <Header/>
-      <Slider sliderList={Carousel_Home_Data} />
+      <Slider />
       <AboutUs/>
       <WhatWeOffer/>
       <GlobalPresence/>

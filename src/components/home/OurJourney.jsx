@@ -11,7 +11,7 @@ export function OurJourney() {
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="w-full lg:w-[65%] h-[500px] relative overflow-y-auto shadow-md rounded-md shadow-black custom-scrollbar">
                         <div className="flex justify-center items-center absolute top-4 right-4">
-                            <p className="text-lime-900 text-lg animate-bounce font-bold flex items-center">
+                            <p className="text-lime-900 text-lg animate-bounce font-bold flex items-center mt-2 md:mt-4">
                                 Scroll to view Our Journey <FaAngleDoubleDown className="text-xl" />
                             </p>
                         </div>

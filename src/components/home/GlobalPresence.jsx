@@ -19,7 +19,7 @@ export function GlobalPresence() {
                 )}
             >
                 <div className="flex flex-row items-center gap-2">
-                    <img className="rounded-full" width="32" height="32" alt="" src={img} />
+                    <img className="object-contain" width="40" height="40" alt="" src={img} />
                     <div className="flex flex-col">
                         <figcaption className="text-lg md:text-4xl font-semibold text-black">
                             {name}

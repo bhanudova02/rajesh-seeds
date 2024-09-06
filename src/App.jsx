@@ -8,6 +8,8 @@ import { WhatWeOffer } from './components/home/WhatWeOffer'
 import { Slider } from './components/Slider'
 import { VMVHero } from './components/about-us/VMVHero'
 import { VMV } from './components/about-us/VMV'
+import { GlobalPresenceHero } from './components/about-us/GlobalPresenceHero'
+import { GlobalPresenceSection } from './components/about-us/GlobalPresenceSection'
 
 function App() {
 
@@ -26,7 +28,12 @@ function App() {
         />
         <Route path="vmv" element={<div>
           <VMVHero />
-          <VMV/>
+          <VMV />
+        </div>} />
+
+        <Route path="gbl-presence" element={<div>
+          <GlobalPresenceHero />
+          <GlobalPresenceSection/>
         </div>} />
 
 

@@ -15,35 +15,35 @@ export function AboutUs() {
                                 <div className="flex justify-center">
                                     <img src="/icon-units.png" width={1000} height={1000} alt="Counter1" className="w-20 h-20 lg:w-24 lg:h-24 bg-white p-2 rounded-3xl" />
                                 </div>
-                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={50} />+</h2>
+                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-3xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={50} />+</h2>
                                 <p className="text-lg md:text-xl lg:text-base text-center font-bold">Units</p>
                             </div>
                             <div>
                                 <div className="flex justify-center">
                                     <img src="/icon-workforce.png" width={1000} height={1000} alt="Counter2" className="w-20 h-20 lg:w-24 lg:h-24 bg-white p-2 rounded-3xl" />
                                 </div>
-                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={320} />+</h2>
+                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-3xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={320} />+</h2>
                                 <p className="text-lg md:text-xl lg:text-base text-center font-bold">Skilled Workforce</p>
                             </div>
                             <div>
                                 <div className="flex justify-center">
                                     <img src="/food-production.png" width={1000} height={1000} alt="Counter3" className="w-20 h-20 lg:w-24 lg:h-24 bg-white p-2 rounded-3xl" />
                                 </div>
-                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={2000} />+</h2>
+                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-3xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={2000} />+</h2>
                                 <p className="text-lg md:text-xl lg:text-base text-center font-bold">MT Food Per Year</p>
                             </div>
                             <div>
                                 <div className="flex justify-center">
                                     <img src="/feed-production.png" width={1000} height={1000} alt="Counter3" className="w-20 h-20 lg:w-24 lg:h-24 bg-white p-2 rounded-3xl" />
                                 </div>
-                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={7000} />+</h2>
+                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-3xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={7000} />+</h2>
                                 <p className="text-lg md:text-xl lg:text-base text-center font-bold">MT Feeds Per Year</p>
                             </div>
                             <div>
                                 <div className="flex justify-center">
                                     <img src="/seed-production.png" width={1000} height={1000} alt="Counter3" className="w-20 h-20 lg:w-24 lg:h-24 bg-white p-2 rounded-3xl" />
                                 </div>
-                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={1.50} />Lakh+</h2>
+                                <h2 className="text-[#4BC714] text-2xl md:text-3xl lg:text-3xl font-extrabold text-center my-0 md:my-3"><NumberTicker className="text-[#4BC714]" value={1.50} />Lakh+</h2>
                                 <p className="text-lg md:text-xl lg:text-base text-center font-bold">MT Seeds Per Year</p>
                             </div>
                         </div>

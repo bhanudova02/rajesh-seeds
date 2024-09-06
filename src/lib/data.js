@@ -7,7 +7,7 @@ export const headerData = [
 export const Carousel_Home_Data = [
     {
         image: "/home_banner1.jpg",
-        title: 'World leader in seed processing services',
+        title: 'Seed processing services',
         description: `We are at the forefront of the world's seed processing industry, providing state-of-the-art infrastructure and expertise to our global partners. We are proud to be a leading player in the world seed processing sector, offering comprehensive solutions to meet the needs of our global clientele.`
     },
     {

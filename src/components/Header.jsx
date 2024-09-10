@@ -3,6 +3,7 @@ import { NavBarComponent } from './NavBarComponent';
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { NavbarList } from './NavbarListc';
+import { Link } from 'react-router-dom';
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [logo, setLogo] = useState("/white_logo.png");
@@ -43,9 +44,9 @@ export default function Header() {
                     </div>
                 </div>
                 <div className='flex justify-between items-center px-6 py-2.5 md:py-6 lg:py-3'>
-                    <div >
+                    <Link to="/" >
                         <img src={logo} alt="Logo" className="w-24 md:w-28 h-auto" />
-                    </div>
+                    </Link>
                     <NavbarList/>
                     <div className='md:hidden block'>
                         <NavBarComponent />

@@ -12,6 +12,7 @@ import { GlobalPresenceHero } from './components/about-us/GlobalPresenceHero'
 import { GlobalPresenceSection } from './components/about-us/GlobalPresenceSection'
 import { OurClientsHero } from './components/about-us/OurClientsHero'
 import { OurPrestigiousClients } from './components/about-us/OurPrestigiousClients'
+import { PrestigiousClientsTestimonial } from './components/about-us/PrestigiousClientsTestimonial'
 function App() {
 
     return (
@@ -42,14 +43,10 @@ function App() {
             <div>
               <OurClientsHero />
               <OurPrestigiousClients/>
+              <PrestigiousClientsTestimonial/>
             </div>
           } />
-
-
-
-
         </Routes>
-
       </main>
     )
   }

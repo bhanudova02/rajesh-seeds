@@ -76,7 +76,7 @@ export const AccordionData = [
     {
         "title": "AboutUs",
         "items": [
-            { title: "Vision & Mission", mtCount: "px-4 mt-4 mb-1" }, { title: "Global Presence", mtCount: "px-4 mb-1" }, { title: "Prestigious Clients", mtCount: "px-4" }
+            { title: "Vision & Mission", mtCount: "px-4 mt-4 mb-1",link:'/vmv' }, { title: "Global Presence", mtCount: "px-4 mb-1",link:'/gblpresence' }, { title: "Prestigious Clients", mtCount: "px-4",link:'/ourclients' }
         ]
     },
     {
@@ -87,41 +87,71 @@ export const AccordionData = [
     }
 ];
 
+export const ClientsLogos = [
+    {
+        img: "/client_1.png",
+    },
+    {
+        img: "/client_2.png",
+    },
+    {
+        img: "/client_3.png",
+    },
+    {
+        img: "/client_4.png",
+    },
+    {
+        img: "/client_5.png",
+
+    },
+    {
+        img: "/client_6.png",
+    },
+    {
+        img: "/client_7.png",
+    },
+    {
+        img: "/client_8.png",
+
+    },
+];
+
+
 export const globalPresenceData = [
-        {
-            name: "India",
-            img: "/in_flag.png",
-        },
-        {
-            name: "Bangladesh",
-            img: "/ba_flag.png",
-        },
-        {
-            name: "Indonesia",
-            img: "/indonesia_flg.png",
-        },
-        {
-            name: "Philippines",
-            img: "/philippines_flag.png",
-        },
-        {
-            name: "Singapore",
-            img: "/singapore_flag.png",
-        },
-        {
-            name: "Vietnam",
-            img: "/vietnam_flag.png",
-        },
-        {
-            name: "Ghana",
-            img: "/ghana_flag.png",
-        },
-        {
-            name: "Nigeria",
-            img: "/nigeria_flag.png",
-        },
-        {
-            name: "Zambia",
-            img: "/zambia_flag.png",
-        }
-    ];
+    {
+        name: "India",
+        img: "/in_flag.png",
+    },
+    {
+        name: "Bangladesh",
+        img: "/ba_flag.png",
+    },
+    {
+        name: "Indonesia",
+        img: "/indonesia_flg.png",
+    },
+    {
+        name: "Philippines",
+        img: "/philippines_flag.png",
+    },
+    {
+        name: "Singapore",
+        img: "/singapore_flag.png",
+    },
+    {
+        name: "Vietnam",
+        img: "/vietnam_flag.png",
+    },
+    {
+        name: "Ghana",
+        img: "/ghana_flag.png",
+    },
+    {
+        name: "Nigeria",
+        img: "/nigeria_flag.png",
+    },
+    {
+        name: "Zambia",
+        img: "/zambia_flag.png",
+    }
+];

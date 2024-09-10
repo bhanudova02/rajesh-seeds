@@ -1,10 +1,13 @@
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { AccordionData } from "@/lib/data";
 import { CgMenuRight } from "react-icons/cg";
 import { FaFacebookSquare, FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export function NavBarComponent() {
+    const navigate = useNavigate();
+
     return (
         <nav>
             <Sheet>
@@ -24,13 +27,20 @@ export function NavBarComponent() {
                         <div className="text-white">
                             <Accordion type="single" collapsible>
                                 <ul className="space-y-4">
-                                    <li className="bg-neutral-900 rounded-md p-2">Home</li>
+
+                                    <li className="bg-neutral-900 rounded-md p-2">
+                                        <SheetClose onClick={() => navigate('/')}>
+                                            Home
+                                        </SheetClose>
+                                    </li>
                                     <li className="bg-neutral-900 rounded-md p-2">
                                         <AccordionItem value="item-1">
                                             <AccordionTrigger>About Us</AccordionTrigger>
                                             {AccordionData[0].items.map(data =>
                                                 <AccordionContent key={data.title} className={`${data.mtCount} text-sm`}>
-                                                    {data.title}
+                                                    <SheetClose onClick={()=>navigate(`${data.link}`)}>
+                                                        {data.title}
+                                                    </SheetClose>
                                                 </AccordionContent>
                                             )}
                                         </AccordionItem>

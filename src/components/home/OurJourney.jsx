@@ -9,15 +9,13 @@ export function OurJourney() {
                 </h2>
 
                 <div className="flex flex-col md:flex-row gap-4">
-                    <div className="w-full lg:w-[65%] h-[500px] relative overflow-y-auto shadow-md rounded-md shadow-black custom-scrollbar">
+                    <div className="w-full lg:w-[65%] h-[500px] relative overflow-y-auto shadow-md rounded-md shadow-black custom-scrollbar border-2 border-green-600">
                         <div className="flex justify-center items-center absolute top-4 right-4">
                             <p className="text-lime-900 text-lg animate-bounce font-bold flex items-center mt-2 md:mt-4">
                                 Scroll to view Our Journey <FaAngleDoubleDown className="text-lg md:text-xl" />
                             </p>
                         </div>
                         <img src="/Timeline_Journey.png" alt="TimeLine" className="w-[40rem] mx-auto" />
-                       
-                       
                     </div>
                     <div className="relative w-full lg:w-[35%] ">
                         {/* <img src="/journey_right_box.jpg" alt="journey_right_box.jpg" className="md:absolute top-0 left-0 h-[50vh] md:h-full w-full" /> */}

@@ -36,7 +36,7 @@ export function NavBarComponent() {
                                 <ul className="space-y-4">
 
                                     <li className="bg-neutral-900 rounded-md p-2">
-                                        <SheetClose onClick={() => navigate('/')}>
+                                        <SheetClose onClick={() => handelNavigation('/')}>
                                             Home
                                         </SheetClose>
                                     </li>

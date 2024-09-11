@@ -3,19 +3,26 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { AccordionData } from "@/lib/data";
 import { CgMenuRight } from "react-icons/cg";
 import { FaFacebookSquare, FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { LoadingPopup } from "./LoadingPopup";
 
 export function NavBarComponent() {
-    const navigate = useNavigate();
-
+    const [isLoading, setIsLoading] = useState(false);
+    const handelNavigation = (url) => {
+        setIsLoading(true);
+        setTimeout(() => {
+            window.location.href = url
+        }, 100)
+    }
     return (
         <nav>
+            {isLoading && <LoadingPopup/>}
             <Sheet>
                 <SheetTrigger>
                     <CgMenuRight className="text-2xl" />
                 </SheetTrigger>
                 <SheetContent side={"left"} className="w-64 bg-gray-800 text-white max-h-screen overflow-y-auto">
-                    <div className="pb-4 border-b border-gray-700">
+                    <div onClick={()=>{handelNavigation('/')}} className="pb-4 border-b border-gray-700">
                         <img src="/logo.png" alt="Logo" className="w-24" />
                     </div>
                     <SheetHeader>
@@ -38,7 +45,7 @@ export function NavBarComponent() {
                                             <AccordionTrigger>About Us</AccordionTrigger>
                                             {AccordionData[0].items.map(data =>
                                                 <AccordionContent key={data.title} className={`${data.mtCount} text-sm`}>
-                                                    <SheetClose onClick={()=>navigate(`${data.link}`)}>
+                                                    <SheetClose onClick={()=>{handelNavigation(data.link)}}>
                                                         {data.title}
                                                     </SheetClose>
                                                 </AccordionContent>

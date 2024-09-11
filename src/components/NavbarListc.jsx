@@ -3,14 +3,12 @@ import { useState } from "react"
 import { LoadingPopup } from "./LoadingPopup";
 export function NavbarList() {
     const [isLoading, setIsLoading] = useState(false);
-
     const handelNavigation = (url) => {
         setIsLoading(true);
         setTimeout(()=>{
             window.location.href=url;
         },100);
     }
-
     return (
         <div>
             {isLoading && <LoadingPopup/>}
@@ -44,7 +42,6 @@ export function NavbarList() {
                 <div className="cursor-pointer">Careers</div>
                 <div className="cursor-pointer">Contact Us</div>
             </div>
-
         </div>
     )
 }

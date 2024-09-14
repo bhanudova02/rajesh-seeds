@@ -35,7 +35,7 @@ export function NavbarList() {
                         <DropdownMenuTrigger asChild className="cursor-pointer">
                             <h2>Services</h2>
                         </DropdownMenuTrigger>
-                        <DropdownMenuContent className="absolute -left-8 ">
+                        <DropdownMenuContent className="absolute -left-8">
                             <DropdownMenuItem>
                                 <button onClick={() => { handelNavigation('/seed-processing') }}>Seed Processing</button>
                             </DropdownMenuItem>

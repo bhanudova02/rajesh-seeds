@@ -58,6 +58,12 @@ function App() {
             <WhyChooseUs />
           </div>}
         />
+        <Route path="seed-to-seed" element={
+          <div>
+            <HeroComponent img={'/seed_to_seed_banner.jpg'} title={"Welcome To Seed To Seed"} />
+          </div>
+        }
+        />
 
       </Routes>
     </main>

@@ -7,7 +7,7 @@ export function DealWith() {
                 <div>
 
 
-                    <div className="py-10 rounded-md ">
+                    <div className="pb-10 rounded-md ">
                         <h2 className="text-center font-bold text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#1E3A8A] to-sky-600 mb-8">
                             We Deal With
                         </h2>

@@ -13,6 +13,7 @@ import { PrestigiousClientsTestimonial } from './components/about-us/Prestigious
 import { HeroComponent } from './components/HeroComponent'
 import { DealWith } from './components/seed-processing/DealWith'
 import { WorldClassFacilities } from './components/seed-processing/WorldClassFacilities'
+import { WhyChooseUs } from './components/seed-processing/WhyChooseUs'
 function App() {
 
   return (
@@ -53,7 +54,8 @@ function App() {
           <div>
             <HeroComponent img={'/seed_processing_banner.png'} title={"Welcome To Seed Processing"} />
             <DealWith />
-            <WorldClassFacilities/>
+            <WorldClassFacilities />
+            <WhyChooseUs />
           </div>}
         />
 

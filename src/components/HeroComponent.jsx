@@ -8,7 +8,7 @@ export function HeroComponent({ img, title }) {
             <div className="absolute top-[60%] md:top-[56%] left-1/2 lg:top-1/2 lg:left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
                 <div className="w-full lg:w-[36rem]">
                     <FlipText
-                        className="text-white font-bold text-2xl md:text-5xl lg:text-6xl"
+                        className="text-white font-bold text-xl md:text-5xl lg:text-6xl"
                         word={title}
                     />
                 </div>

@@ -53,7 +53,7 @@ const CommitmentQuality = () => {
                                         <li>Expert agricultural specialists</li>
                                     </ul>
                                 </div>
-                                <div className="md:w-1/2">
+                                <div className="w-full md:w-1/2">
                                     <img
                                         src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
                                         alt="Modern agricultural facility"

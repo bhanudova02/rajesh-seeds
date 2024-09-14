@@ -4,8 +4,8 @@ export function SeedToSeed() {
     return (
         <div className="bg-[#CCD8C0] py-20">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <FaSeedling className="text-5xl text-green-600 mx-auto mb-4" />
+                <div className="text-center mb-8 md:mb-12">
+                    <FaSeedling className="text-5xl text-green-600 mx-auto" />
                     <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
                         Seed-To-Seed Excellence
                     </h2>

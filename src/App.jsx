@@ -14,6 +14,9 @@ import { HeroComponent } from './components/HeroComponent'
 import { DealWith } from './components/seed-processing/DealWith'
 import { WorldClassFacilities } from './components/seed-processing/WorldClassFacilities'
 import { WhyChooseUs } from './components/seed-processing/WhyChooseUs'
+import { SeedToSeed } from './components/seed-to-seed/SeedToSeed'
+import CompanyServices from './components/seed-to-seed/CompanyServices'
+import CommitmentQuality from './components/seed-to-seed/CommitmentQuality'
 function App() {
 
   return (
@@ -61,6 +64,9 @@ function App() {
         <Route path="seed-to-seed" element={
           <div>
             <HeroComponent img={'/seed_to_seed_banner.jpg'} title={"Welcome To Seed To Seed"} />
+            <SeedToSeed />
+            <CompanyServices/>
+            <CommitmentQuality/>
           </div>
         }
         />

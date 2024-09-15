@@ -23,6 +23,9 @@ import { FoodWhatWeOffer } from './components/food-processing/FoodWhatWeOffer'
 import { FoodWhyChooseUs } from './components/food-processing/FoodWhyChooseUs'
 import { OurFoodStrengths } from './components/food-processing/OurFoodStrengths'
 import { FoodCertifications } from './components/food-processing/FoodCertifications'
+import { FeedWhoWeAre } from './components/animal-feeds/FeedWhoWeAre'
+import { FeedOurStrengths } from './components/animal-feeds/FeedOurStrengths'
+import { FeedWhyChooseUs } from './components/animal-feeds/FeedWhyChooseUs'
 function App() {
 
   return (
@@ -81,11 +84,21 @@ function App() {
           <div>
             <HeroComponent img={'/FoodProcessingBanner.png'} title={"Welcome To Food Processing"} />
             <VegetableListingComponent />
-            <FoodInfrastructure/>
-            <FoodWhatWeOffer/>
-            <FoodWhyChooseUs/>
-            <OurFoodStrengths/>
-            <FoodCertifications/>
+            <FoodInfrastructure />
+            <FoodWhatWeOffer />
+            <FoodWhyChooseUs />
+            <OurFoodStrengths />
+            <FoodCertifications />
+          </div>
+        }
+        />
+
+        <Route path="pspl-feed" element={
+          <div>
+            <HeroComponent img={'/AnimalFeedBanner.jpg'} title={"Welcome To PSPL Feeds"} />
+            <FeedWhoWeAre />
+            <FeedOurStrengths/>
+            <FeedWhyChooseUs/>
           </div>
         }
         />

@@ -40,7 +40,7 @@ export function FoodWhyChooseUs() {
                         <div key={feature.id} className="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
                             <div className="flex flex-col justify-center items-center">
                                 {feature.icon}
-                                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                                <h3 className="text-lg md:text-xl font-semibold mb-2">{feature.title}</h3>
                                 <p className="text-gray-600">{feature.description}</p>
                             </div>
                         </div>

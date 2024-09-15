@@ -19,14 +19,14 @@ export function OurFoodStrengths() {
                     Yellows & Greens Agrifresh Private Limited (Y&G) is dedicated to deliver highest quality fresh and frozen fruits and vegetables. Our mission is to bring the finest produce from farm to plate while preserving essential flavors, nutrients, and freshness that make our products stand out.
                 </p>
                 <div className="bg-gray-50 rounded-lg shadow-sm shadow-green-100 p-8 mb-12">
-                    <h4 className="text-2xl font-semibold text-green-600 mb-4">Plough-to-Plate</h4>
+                    <h4 className="text-xl md:text-2xl font-semibold text-green-600 mb-4">Plough-to-Plate</h4>
                     <p className="text-gray-700">
                         Beyond preserving quality, we are committed to adding value at each stage of the Fruits and Vegetables (F&V) value chain. Through collaborations with farmers, technological interventions, and efficient processing, we enhance marketability and shelf life of our products. This approach not only benefits consumers but also contributes to higher income and reduced losses for growers. As we continue to expand our reach and product offerings, our core commitment remains to deliver farm fresh goodness in every bite, no matter wherever you are.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div>
-                        <h3 className="text-2xl font-bold text-green-600 mb-6">Our Differentiators</h3>
+                        <h3 className="text-xl md:text-2xl font-bold text-green-600 mb-6">Our Differentiators</h3>
                         <ul className="space-y-6">
                             {strengths.map((strength, index) => (
                                 <li key={index} className="flex items-start">
@@ -44,7 +44,7 @@ export function OurFoodStrengths() {
                         />
                         <div className="absolute inset-0 bg-green-600 opacity-20"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
-                            <h4 className="text-white text-2xl font-bold">Farm Fresh Goodness</h4>
+                            <h4 className="text-white text-xl md:text-2xl font-bold">Farm Fresh Goodness</h4>
                             <p className="text-white mt-2">From our farms to your plate</p>
                         </div>
                     </div>

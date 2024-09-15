@@ -5,25 +5,25 @@ export function FoodWhatWeOffer() {
         {
             title: 'Y&G-Fresh',
             description: 'Our selection of farm-fresh fruits and vegetables, handpicked for their quality and flavor, offering you the best that each season has to offer.',
-            icon: <FaLeaf className="text-3xl text-green-600 mb-2" />,
+            icon: <FaLeaf className="text-2xl md:text-3xl text-green-600 mb-2" />,
             image: '/food_box.jpg'
         },
         {
             title: 'Y&G-Frozen',
             description: 'A premium range of frozen fruits and vegetables, RTEs that locks in freshness and nutrients, providing healthy, delicious options year-round.',
-            icon: <FaSnowflake className="text-3xl text-blue-600 mb-2" />,
+            icon: <FaSnowflake className="text-2xl md:text-3xl text-blue-600 mb-2" />,
             image: '/food_box2.jpg'
         },
         {
             title: 'Y&G-Horticulture',
             description: 'Sustainable farming practices that ensure our produce is fresh, delicious, and grown with care for the environment.',
-            icon: <FaSeedling className="text-3xl text-yellow-600 mb-2" />,
+            icon: <FaSeedling className="text-2xl md:text-3xl text-yellow-600 mb-2" />,
             image: '/food_box3.jpg'
         },
         {
             title: 'Y&G-Value-Adds',
             description: 'A variety of value-added products, including pre-cut veggies, mixed fruit packs, and gourmet dips, making healthy eating convenient and tasty.',
-            icon: <FaCarrot className="text-3xl text-orange-600 mb-2" />,
+            icon: <FaCarrot className="text-2xl md:text-3xl text-orange-600 mb-2" />,
             image: 'food_box4.jpg'
         }
     ];
@@ -40,7 +40,7 @@ export function FoodWhatWeOffer() {
                             <div className="p-4">
                                 <div className="flex items-center mb-2">
                                     {offering.icon}
-                                    <h2 className="font-bold text-green-600 text-xl ml-2">{offering.title}</h2>
+                                    <h2 className="font-bold text-green-600 text-lg md:text-xl ml-2">{offering.title}</h2>
                                 </div>
                                 <p className="text-gray-700">{offering.description}</p>
                             </div>

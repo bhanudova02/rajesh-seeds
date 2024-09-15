@@ -64,7 +64,7 @@ const CompanyServices = () => {
   };
 
   return (
-    <div className='bg-gradient-to-r from-[#E3EEDD] to-[#B0BCA9] py-20'>
+    <div className='bg-green-100/70 py-20'>
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
           Our Key Services

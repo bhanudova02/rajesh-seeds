@@ -34,7 +34,7 @@ const CommitmentQuality = () => {
 
 
             <div>
-                <div className='bg-[#C3D6C2] py-20'>
+                <div className='bg-teal-200/10 py-20'>
                     <section className="max-w-7xl mx-auto px-6 lg:px-8">
                         <h2 className="text-4xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-lime-600 mb-10">
                             Our Expertise

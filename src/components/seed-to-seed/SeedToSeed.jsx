@@ -2,7 +2,7 @@ import { FaSeedling } from "react-icons/fa";
 
 export function SeedToSeed() {
     return (
-        <div className="bg-[#CCD8C0] py-20">
+        <div className="bg-green-50 py-20">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="text-center mb-8 md:mb-12">
                     <FaSeedling className="text-5xl text-green-600 mx-auto" />

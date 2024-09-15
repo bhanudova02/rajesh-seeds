@@ -15,7 +15,7 @@ const ServiceCard = ({ icon, title, description, isOpen, toggleOpen }) => (
     {isOpen && (
       <div className="mt-4">
         <p className="text-gray-600">{description}</p>
-        <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+        <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-lime-600 transition">
           Learn More
         </button>
       </div>

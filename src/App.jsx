@@ -17,6 +17,12 @@ import { WhyChooseUs } from './components/seed-processing/WhyChooseUs'
 import { SeedToSeed } from './components/seed-to-seed/SeedToSeed'
 import CompanyServices from './components/seed-to-seed/CompanyServices'
 import CommitmentQuality from './components/seed-to-seed/CommitmentQuality'
+import VegetableListingComponent from './components/food-processing/VegetableListingComponent'
+import { FoodInfrastructure } from './components/food-processing/FoodInfrastructure'
+import { FoodWhatWeOffer } from './components/food-processing/FoodWhatWeOffer'
+import { FoodWhyChooseUs } from './components/food-processing/FoodWhyChooseUs'
+import { OurFoodStrengths } from './components/food-processing/OurFoodStrengths'
+import { FoodCertifications } from './components/food-processing/FoodCertifications'
 function App() {
 
   return (
@@ -65,8 +71,21 @@ function App() {
           <div>
             <HeroComponent img={'/seed_to_seed_banner.jpg'} title={"Welcome To Seed To Seed"} />
             <SeedToSeed />
-            <CompanyServices/>
-            <CommitmentQuality/>
+            <CompanyServices />
+            <CommitmentQuality />
+          </div>
+        }
+        />
+
+        <Route path="food-processing" element={
+          <div>
+            <HeroComponent img={'/FoodProcessingBanner.png'} title={"Welcome To Food Processing"} />
+            <VegetableListingComponent />
+            <FoodInfrastructure/>
+            <FoodWhatWeOffer/>
+            <FoodWhyChooseUs/>
+            <OurFoodStrengths/>
+            <FoodCertifications/>
           </div>
         }
         />

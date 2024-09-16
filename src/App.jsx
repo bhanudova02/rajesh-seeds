@@ -26,6 +26,7 @@ import { FoodCertifications } from './components/food-processing/FoodCertificati
 import { FeedWhoWeAre } from './components/animal-feeds/FeedWhoWeAre'
 import { FeedOurStrengths } from './components/animal-feeds/FeedOurStrengths'
 import { FeedWhyChooseUs } from './components/animal-feeds/FeedWhyChooseUs'
+import { ChemicalWhoWeAre } from './components/agro-chemical/ChemicalWhoWeAre'
 function App() {
 
   return (
@@ -97,11 +98,18 @@ function App() {
           <div>
             <HeroComponent img={'/AnimalFeedBanner.jpg'} title={"Welcome To PSPL Feeds"} />
             <FeedWhoWeAre />
-            <FeedOurStrengths/>
-            <FeedWhyChooseUs/>
+            <FeedOurStrengths />
+            <FeedWhyChooseUs />
           </div>
         }
         />
+
+        <Route path="agro-chemicals" element={
+          <div>
+            <HeroComponent img={'/AgroChemicalBanner.jpg'} title={"Welcome To Agro Chemical"} />
+            <ChemicalWhoWeAre />
+          </div>
+        } />
 
       </Routes>
     </main>

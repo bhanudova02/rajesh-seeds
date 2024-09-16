@@ -132,7 +132,7 @@ function App() {
         } />
         <Route path="contact-us" element={
           <div>
-            <HeroComponent img={'/ContactUsBanner.jpg'} title={"Feel Free To Contact Us"} />
+            <HeroComponent img={'/ContactUsBanner.jpg'} title={"Feel Free To ContactUs"} />
             <ContactUs/>
           </div>
         } />

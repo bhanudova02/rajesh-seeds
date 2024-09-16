@@ -13,21 +13,21 @@ export function CareerComponent() {
                 {/* New Section: Company Culture */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     <div className="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition duration-300">
-                        <img src="/images/teamwork.jpg" alt="Teamwork" className="w-full h-40 object-cover rounded-t-lg mb-4" />
+                        <img src="/CollaborativeEnvironmen.jpg" alt="Teamwork" className="w-full h-40 object-cover rounded-t-lg mb-4" />
                         <h3 className="text-2xl font-semibold mb-2">Collaborative Environment</h3>
                         <p className="text-gray-600">
                             We foster teamwork and encourage open communication to create a collaborative and positive work environment where everyone's voice is heard.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition duration-300">
-                        <img src="/images/growth.jpg" alt="Growth" className="w-full h-40 object-cover rounded-t-lg mb-4" />
+                        <img src="/GrowthOpportunities.jpg" alt="Growth" className="w-full h-40 object-cover rounded-t-lg mb-4" />
                         <h3 className="text-2xl font-semibold mb-2">Growth Opportunities</h3>
                         <p className="text-gray-600">
                             We invest in our employees' personal and professional growth, providing ample opportunities for career advancement and skill development.
                         </p>
                     </div>
                     <div className="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition duration-300">
-                        <img src="/images/worklife.jpg" alt="Work-Life Balance" className="w-full h-40 object-cover rounded-t-lg mb-4" />
+                        <img src="/Work-LifeBalance.jpg" alt="Work-Life Balance" className="w-full h-40 object-cover rounded-t-lg mb-4" />
                         <h3 className="text-2xl font-semibold mb-2">Work-Life Balance</h3>
                         <p className="text-gray-600">
                             We value work-life balance and offer flexible working hours to ensure that our employees can thrive both professionally and personally.

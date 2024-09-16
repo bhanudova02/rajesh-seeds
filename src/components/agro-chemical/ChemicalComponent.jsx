@@ -2,7 +2,7 @@ import { FaCheckCircle, FaArrowRight, FaIndustry, FaMapMarkerAlt } from 'react-i
 import { FaFlask, FaClipboardCheck, FaMicroscope, FaHandshake } from 'react-icons/fa';
 import { FaBookOpen, FaRegLightbulb, FaUserFriends } from 'react-icons/fa';
 
-export function ChemicalWhoWeAre() {
+export function ChemicalComponent() {
     const strengths = [
         {
             title: 'Innovative Solutions',

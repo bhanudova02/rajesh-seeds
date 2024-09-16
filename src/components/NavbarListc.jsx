@@ -54,9 +54,9 @@ export function NavbarList() {
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </div>
-                <div className="cursor-pointer">Infrastructure</div>
-                <div className="cursor-pointer">Careers</div>
-                <div className="cursor-pointer">Contact Us</div>
+                <div onClick={() => { handelNavigation('/infra') }} className="cursor-pointer">Infrastructure</div>
+                <div onClick={() => { handelNavigation('/career') }} className="cursor-pointer">Careers</div>
+                <div onClick={() => { handelNavigation('/contact-us') }}className="cursor-pointer">Contact Us</div>
             </div>
         </div>
     )

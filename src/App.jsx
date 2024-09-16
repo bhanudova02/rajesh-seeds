@@ -26,7 +26,12 @@ import { FoodCertifications } from './components/food-processing/FoodCertificati
 import { FeedWhoWeAre } from './components/animal-feeds/FeedWhoWeAre'
 import { FeedOurStrengths } from './components/animal-feeds/FeedOurStrengths'
 import { FeedWhyChooseUs } from './components/animal-feeds/FeedWhyChooseUs'
-import { ChemicalWhoWeAre } from './components/agro-chemical/ChemicalWhoWeAre'
+import { ChemicalComponent } from './components/agro-chemical/ChemicalComponent'
+import { Infrastructure } from './components/infra/Infrastructure'
+import { InfrastructureStatus } from './components/infra/InfrastructureStatus'
+import InfrastructureTab from './components/infra/InfrastructureTab'
+import { CareerComponent } from './components/career/CareerComponent'
+import { ContactUs } from './components/contact-us/ContactUs'
 function App() {
 
   return (
@@ -107,7 +112,28 @@ function App() {
         <Route path="agro-chemicals" element={
           <div>
             <HeroComponent img={'/AgroChemicalBanner.jpg'} title={"Welcome To Agro Chemical"} />
-            <ChemicalWhoWeAre />
+            <ChemicalComponent />
+          </div>
+        } />
+
+        <Route path="infra" element={
+          <div>
+            <HeroComponent img={'/InfrastructureBanner.jpg'} title={"Welcome To Infrastructure"} />
+            <Infrastructure />
+            <InfrastructureTab />
+            <InfrastructureStatus />
+          </div>
+        } />
+        <Route path="career" element={
+          <div>
+            <HeroComponent img={'/Carrer.jpg'} title={"Career Growth With PSPL"} />
+            <CareerComponent />
+          </div>
+        } />
+        <Route path="contact-us" element={
+          <div>
+            <HeroComponent img={'/ContactUsBanner.jpg'} title={"Feel Free To Contact Us"} />
+            <ContactUs/>
           </div>
         } />
 

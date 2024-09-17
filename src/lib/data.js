@@ -55,11 +55,6 @@ export const Carousel_Home_Data = [
         title: 'Enhancing Livestock Nutrition with Rajesh Feeds',
         description: `Rajesh Feeds offers premium livestock feed solutions, including corn silage with a 1.5-year shelf life, nutrimize, and baled silage. With a production capacity of 7,000 metric tonnes annually, we ensure improved animal health and productivity.`
     },
-    {
-        image: "/home_banner11.jpg",
-        title: 'Precision Formulation for Agricultural Progress',
-        description: `Rajesh Seeds' Chemical Division revolutionizes agriculture with precise granule and powder formulations, inspired by global leaders like FMC Corporation. Our 5-acre facility boasts a yearly production capacity of 14,000 metric tonnes.`
-    },
 ];
 
 

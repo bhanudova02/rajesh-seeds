@@ -19,7 +19,6 @@ export function OurJourney() {
                     </div>
                     <div className="relative w-full lg:w-[35%] ">
                         <img src="/journeyBox.jpg" alt="journey_right_box.jpg" className="md:absolute top-0 left-0 h-[50vh] md:h-full w-full" />
-                       
                         <div className="absolute inset-0 bg-black bg-opacity-70 rounded-xl p-10 flex justify-center items-center">
                             <div>
                                 <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white">Company Overview</h3>

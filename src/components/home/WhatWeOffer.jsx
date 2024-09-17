@@ -1,11 +1,12 @@
 export function WhatWeOffer() {
     const serviceBox = [
-        { id: 1, image: '/Home_SeedProcessing.png', title: 'Seed Processing', paragraph: 'We provide top-tier global seed processing solutions, meeting rigorous quality across the globe.' },
-        { id: 2, image: '/HomeSeedToSeed.png', title: 'Seed To Seed', paragraph: 'We ensure IP-protected infrastructure, delivering high-quality seed-to-seed services globally.' },
-        { id: 3, image: '/HomeFoodProcessing.png', title: 'Food Processing', paragraph: 'We offer global food processing solutions, providing 24/7 packing, shipping, and processing services.' },
-        { id: 4, image: '/HomePSPLFeed.png', title: 'PSPL Feeds', paragraph: 'High-quality, nutritious and reliable animal feed options like corn silage, ensuring a shelf life of 1.5 years.' },
-        { id: 5, image: '/HomeAgroChemical.png', title: 'Agro Chemicals', paragraph: 'We provide top-tier chemical production with cutting-edge, high-throughput facilities for enterprises.' }
-    ]
+        { id: 1, image: '/Home_SeedProcessing.png', title: 'Seed Processing', paragraph: 'Rajesh Seeds offers premier seed processing solutions, adhering to stringent quality standards worldwide.' },
+        { id: 2, image: '/HomeSeedToSeed.png', title: 'Seed To Seed', paragraph: 'We provide IP-protected infrastructure for seed-to-seed services, delivering high-quality solutions on a global scale.' },
+        { id: 3, image: '/HomeFoodProcessing.png', title: 'Food Processing', paragraph: 'Rajesh Seeds delivers comprehensive food processing solutions, including round-the-clock packing, shipping, and processing services.' },
+        { id: 4, image: '/HomeRSPLFeed.png', title: 'RSPL Feeds', paragraph: 'Our animal feed options, such as corn silage, are high-quality and nutritious, with a shelf life of up to 1.5 years.' },
+        { id: 5, image: '/HomeAgroChemical.png', title: 'Agro Chemicals', paragraph: 'We offer advanced chemical production with state-of-the-art facilities, providing high-throughput solutions for enterprises.' }
+    ];
+
     return (
         <div className="bg-[#F2F2F2] md:text-lg">
             <div className="w-[90%] md:max-w-7xl mx-auto py-20">

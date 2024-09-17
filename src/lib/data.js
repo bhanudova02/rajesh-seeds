@@ -7,70 +7,61 @@ export const headerData = [
 export const Carousel_Home_Data = [
     {
         image: "/home_banner1.jpg",
-        title: 'Seed processing services',
-        description: `We are at the forefront of the world's seed processing industry, providing state-of-the-art infrastructure and expertise to our global partners. We are proud to be a leading player in the world seed processing sector, offering comprehensive solutions to meet the needs of our global clientele.`
+        title: 'Seed Processing Solutions',
+        description: `Rajesh Seeds leads the global seed processing industry by offering cutting-edge infrastructure and expertise to our partners. We are proud to provide comprehensive solutions to meet the diverse needs of our worldwide clientele.`
     },
     {
         image: "/home_banner2.jpg",
-        title: 'Innovation and improvement',
-        description: `At PSPL, we're constantly coming up with new ideas and ways to improve our processes. We always keep up 
-      with the newest developments in the seed processing industry and find innovative ways to meet our clients' 
-      needs by improving our processing lines and procedures. We also regularly analyse data to optimise our 
-      workflows and shorten turnaround times.`
+        title: 'Innovation and Enhancement',
+        description: `At RSPL, we continuously explore new ideas and innovations to improve our processes. Staying ahead with the latest advancements in seed processing, we focus on enhancing our workflows to meet clients' evolving needs and ensure efficiency across our operations.`
     },
     {
         image: "/home_banner3.jpg",
-        title: 'Advanced Processing Techniques',
-        description: `Our seeds are processed using cutting-edge technology to ensure purity, from the field to the packaging. To guarantee constant quality, our PSPL makes significant investments in cutting-edge facilities and machinery.`
+        title: 'Advanced Seed Processing Techniques',
+        description: `Using state-of-the-art technology, Rajesh Seeds ensures that every seed is processed with precision and purity. We invest heavily in advanced facilities and equipment to maintain consistent, high-quality standards across all production stages.`
     },
     {
         image: "/home_banner4.jpg",
-        title: 'Crafting Excellence, Seed by Seed',
-        description: `At Prasad Seeds, we believe in the power of craftsmanship to drive agricultural excellence. 
-      With each seed crafted, we are not just cultivating crops, we are nurturing a legacy of innovation and quality.`
+        title: 'Excellence in Every Seed',
+        description: `At Rajesh Seeds, we believe in the craftsmanship of agriculture. Each seed we process is a testament to our commitment to quality and innovation, nurturing not just crops but a legacy of agricultural excellence.`
     },
     {
         image: "/home_banner5.jpg",
-        title: 'Seeds Perfected Through Precision Processing',
-        description: `We accurately process every seed through our advanced processing techniques. Through 
-      state-of-the-art technology and stringent quality control measures, we guarantee seeds of purity, 
-      uniformity, and vitality.`
+        title: 'Precision in Seed Processing',
+        description: `We process every seed with accuracy using advanced techniques and technologies. Through strict quality control measures, we ensure that each seed meets high standards of purity, uniformity, and vitality.`
     },
     {
         image: "/home_banner6.jpg",
-        title: 'Seeds Perfected Through Precision Processing',
-        description: `We accurately process every seed through our advanced processing techniques. Through 
-      state-of-the-art technology and stringent quality control measures, we guarantee seeds of purity, 
-      uniformity, and vitality.`
+        title: 'Precision in Seed Processing',
+        description: `We process every seed with accuracy using advanced techniques and technologies. Through strict quality control measures, we ensure that each seed meets high standards of purity, uniformity, and vitality.`
     },
-
     {
         image: "/home_banner7.jpg",
-        title: 'Our farmers network',
-        description: 'A huge network of experienced, trusted, and committed farmers across India and the world covers multiple regions.'
+        title: 'Our Farmer Network',
+        description: `Rajesh Seeds boasts an extensive network of experienced, trusted, and dedicated farmers across multiple regions in India and the world, ensuring high-quality seed production.`
     },
     {
         image: "/home_banner8.jpg",
-        title: 'Friendly field experts',
-        description: 'Our professionally trained, highly qualified, and friendly field experts closely work with farmers to help and guide them in each step of seed production to get high yields and the best quality seeds.'
+        title: 'Expert Field Support',
+        description: `Our highly trained and qualified field experts work closely with farmers, offering guidance and support throughout every stage of seed production to help achieve optimal yields and the best seed quality.`
     },
     {
         image: "/home_banner9.jpg",
-        title: 'Customised solutions',
-        description: 'At Prasad Seeds, we do not walk away from any challenge we listen to our clients wishes and customise the process lines to match their needs. In the past 35 years, we have helped our esteemed clients across the world and in India with tailor-made solutions to perfectly match their specific needs.'
+        title: 'Tailored Solutions',
+        description: `At Rajesh Seeds, we thrive on challenges. We actively listen to our clients and tailor our processes to suit their specific requirements. For over 35 years, we have provided customized solutions to clients worldwide, ensuring their unique needs are met.`
     },
     {
         image: "/home_banner10.jpg",
-        title: 'Elevate Livestock Nutrition with Prasad Feeds',
-        description: `Prasad Feeds provide premium livestock feed solutions, featuring corn silage with a 1.5-year shelf life, nutrimize, and baled silage, enhancing productivity and animal health with a 7,000-metric-tonne annual production capacity. Trust Prasad Feeds for exceptional animal nutrition.`
+        title: 'Enhancing Livestock Nutrition with Rajesh Feeds',
+        description: `Rajesh Feeds offers premium livestock feed solutions, including corn silage with a 1.5-year shelf life, nutrimize, and baled silage. With a production capacity of 7,000 metric tonnes annually, we ensure improved animal health and productivity.`
     },
     {
         image: "/home_banner11.jpg",
-        title: 'Precision formulation for the agricultural revolution',
-        description: `Revolutionize agriculture with Prasad Seeds Chemical Division, inspired by FMC Corporation's excellence. Our focus on granule and powder formulation mirrors FMC's precision, with our Ferterra site boasting 5 acres and 14,000 metric tonnes of yearly capacity.`
+        title: 'Precision Formulation for Agricultural Progress',
+        description: `Rajesh Seeds' Chemical Division revolutionizes agriculture with precise granule and powder formulations, inspired by global leaders like FMC Corporation. Our 5-acre facility boasts a yearly production capacity of 14,000 metric tonnes.`
     },
-
 ];
+
 
 export const AccordionData = [
     {

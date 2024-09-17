@@ -67,23 +67,24 @@ export function Footer() {
                     <div>
                         <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
                         <div className="font-medium text-sm w-[80%] md:w-[90%]">
-                            Survey No. 854, Medchal, Industrial Area, Hyderabad, Telangana 501401
-                            08418223127
-                            customercare@prasadseeds.in
+                            Survey No. 104, Medchal, Industrial Area, Hyderabad, Telangana 500402
+                            6300000000
+                            customercare@rajeshseeds.in
                         </div>
+
                     </div>
                     <div>
                         <h2 className="text-2xl font-semibold mb-4">Follow US</h2>
                         <ul className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-0 lg:gap-8">
-                            <li onClick={()=>window.open('https://www.facebook.com','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#0165E1]"><FaFacebook className="w-[1.5rem] h-[1.5rem] text-white" /></li>
-                            <li onClick={()=>window.open('https://www.instagram.com','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#CD486B]"><FaInstagram className="w-[1.5rem] h-[1.5rem] text-white" /></li>
-                            <li onClick={()=>window.open('https://twitter.com','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#1DA1F2]"><FaTwitter className="w-[1.5rem] h-[1.5rem] text-white" /></li>
-                            <li onClick={()=>window.open('https://www.youtube.com/','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#CD201F]"><FaYoutube className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={() => window.open('https://www.facebook.com', '_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#0165E1]"><FaFacebook className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={() => window.open('https://www.instagram.com', '_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#CD486B]"><FaInstagram className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={() => window.open('https://twitter.com', '_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#1DA1F2]"><FaTwitter className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={() => window.open('https://www.youtube.com/', '_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#CD201F]"><FaYoutube className="w-[1.5rem] h-[1.5rem] text-white" /></li>
                         </ul>
                     </div>
                 </div>
                 <div className="text-center pt-[1rem] mt-[2rem] border-black opacity-60 border-t-2" />
-                <h2 className="font-bold text-white text-center">Copyright © 2024 - All right reserved by Prasad Seeds </h2>
+                <h2 className="font-bold text-white text-center">Copyright © 2024 - All right reserved by Rajesh Seeds </h2>
             </div>
         </footer>
     )

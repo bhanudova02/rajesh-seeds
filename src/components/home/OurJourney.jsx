@@ -22,10 +22,7 @@ export function OurJourney() {
                             <div>
                                 <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white">Company Overview</h3>
                                 <p className="text-gray-200 mb-4 text-xs md:text-base">
-                                    Prasad Seeds Pvt. Ltd. (PSPL) is India’s largest outsourced partner in the Seed Processing domain, delivering
-                                    end-to-end turnkey solutions to global Seed companies. For more than 30 years, PSPL has been providing
-                                    state-of-the-art Seed Processing infrastructure facilities, helping its customers reach international quality standards
-                                    while maintaining economies of scale.
+                                    Rajesh Seeds Pvt. Ltd. (RSPL) is India’s largest partner in the Seed Processing industry, offering end-to-end turnkey solutions to global seed companies. For over 30 years, RSPL has been providing cutting-edge seed processing infrastructure, enabling customers to achieve international quality standards while optimizing costs and efficiency.
                                 </p>
                             </div>
                         </div>

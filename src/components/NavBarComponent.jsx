@@ -106,10 +106,10 @@ export function NavBarComponent() {
                     <div className="border-t border-gray-700 pt-4">
                         <h2 className="px-3 mb-2">Contact Us</h2>
                         <div className="grid grid-cols-4 px-3">
-                            <FaFacebookSquare className="text-3xl " />
-                            <FaInstagram className="text-3xl " />
-                            <FaWhatsapp className="text-3xl " />
-                            <FaTelegram className="text-3xl " />
+                            <FaFacebookSquare onClick={()=>window.open('https://www.facebook.com','_blank')} className="text-3xl cursor-pointer" />
+                            <FaInstagram onClick={()=>window.open('https://www.instagram.com','_blank')} className="text-3xl cursor-pointer" />
+                            <FaWhatsapp onClick={()=>window.open('https://web.whatsapp.com/','_blank')} className="text-3xl cursor-pointer" />
+                            <FaTelegram onClick={()=>window.open('https://web.telegram.org/','_blank')} className="text-3xl cursor-pointer" />
                         </div>
                     </div>
                 </SheetContent>

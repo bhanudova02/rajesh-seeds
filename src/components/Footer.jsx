@@ -23,12 +23,19 @@ export function Footer() {
                     <div>
                         <h2 className="text-2xl font-semibold mb-4">About Us</h2>
                         <ul className="space-y-2 font-medium text-sm">
-                            <li>Company Profile</li>
-                            <li>Vision & Mission</li>
-                            <li>Global Presence</li>
-                            <li>Prestigious Clients</li>
-                            <li>Infrastructure</li>
-                            <li>Careers</li>
+                            <li><button className={`${isActive('/vmv') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/vmv') }}>Vision & Mission</button></li>
+                            <li>
+                                <button className={`${isActive('/gblpresence') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/gblpresence') }}>Global Presence</button>
+                            </li>
+                            <li>
+                                <button className={`${isActive('/ourclients') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/ourclients') }}>Prestigious Clients</button>
+                            </li>
+                            <li>
+                                <button onClick={() => { handelNavigation('/infra') }} className={`cursor-pointer ${isActive('/infra') ? 'underline-custom' : ''}`}>Infrastructure</button>
+                            </li>
+                            <li>
+                                <button onClick={() => { handelNavigation('/career') }} className={`cursor-pointer ${isActive('/career') ? 'underline-custom' : ''}`}>Careers</button>
+                            </li>
                             <li>
                                 <button onClick={() => { handelNavigation('/privacypolicy') }} className={`cursor-pointer ${isActive('/privacypolicy') ? 'underline-custom' : ''}`}>
                                     Privacy Policy
@@ -39,11 +46,22 @@ export function Footer() {
                     <div>
                         <h2 className="text-2xl font-semibold mb-4">Services</h2>
                         <ul className="space-y-2 font-medium text-sm">
-                            <li>Seed Processing</li>
-                            <li>Seed to Seed</li>
-                            <li>Food Processing</li>
-                            <li>Feeds</li>
-                            <li>Agro Chemicals</li>
+                            <li>
+                                <button className={`${isActive('/seed-processing') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/seed-processing') }}>Seed Processing</button>
+                            </li>
+                            <li>
+                                <button className={`${isActive('/seed-to-seed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/seed-to-seed') }}>Seed to Seed</button>
+                            </li>
+                            <li>
+                                <button className={`${isActive('/food-processing') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/food-processing') }}>Food Processing</button>
+                            </li>
+                            <li>
+                                <button className={`${isActive('/pspl-feed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/pspl-feed') }}>PSPL Feeds</button>
+
+                            </li>
+                            <li>
+                                <button className={`${isActive('/agro-chemicals') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/agro-chemicals') }}>Agro Chemicals</button>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -57,10 +75,10 @@ export function Footer() {
                     <div>
                         <h2 className="text-2xl font-semibold mb-4">Follow US</h2>
                         <ul className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-0 lg:gap-8">
-                            <li className="rounded-full p-2 w-fit bg-[#0165E1]"><FaFacebook className="w-[1.5rem] h-[1.5rem] text-white" /></li>
-                            <li className="rounded-full p-2 w-fit bg-[#CD486B]"><FaInstagram className="w-[1.5rem] h-[1.5rem] text-white" /></li>
-                            <li className="rounded-full p-2 w-fit bg-[#1DA1F2]"><FaTwitter className="w-[1.5rem] h-[1.5rem] text-white" /></li>
-                            <li className="rounded-full p-2 w-fit bg-[#CD201F]"><FaYoutube className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={()=>window.open('https://www.facebook.com','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#0165E1]"><FaFacebook className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={()=>window.open('https://www.instagram.com','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#CD486B]"><FaInstagram className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={()=>window.open('https://twitter.com','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#1DA1F2]"><FaTwitter className="w-[1.5rem] h-[1.5rem] text-white" /></li>
+                            <li onClick={()=>window.open('https://www.youtube.com/','_blank')} className="cursor-pointer hover:scale-125 transition-all duration-300 rounded-full p-2 w-fit bg-[#CD201F]"><FaYoutube className="w-[1.5rem] h-[1.5rem] text-white" /></li>
                         </ul>
                     </div>
                 </div>

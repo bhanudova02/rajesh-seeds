@@ -143,7 +143,6 @@ function App() {
             <PrivacyPolicy />
           </div>
         } />
-
       </Routes>
     </main>
   )

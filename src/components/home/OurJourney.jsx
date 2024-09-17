@@ -1,5 +1,4 @@
 import { FaAngleDoubleDown } from "react-icons/fa";
-
 export function OurJourney() {
     return (
         <div className="bg-white">

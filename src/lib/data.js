@@ -82,7 +82,7 @@ export const AccordionData = [
     {
         "title": "Services",
         "items": [
-            { title: "Seed Processing", mtCount: "px-4 mt-4 mb-1" }, { title: "Seed to Seed", mtCount: "px-4 mb-1" }, { title: "GFood Processing", mtCount: "px-4 mb-1" }, { title: "PSPL Feeds", mtCount: "px-4 mb-1" }, { title: "Agro Chemicals", mtCount: 'px-4' }
+            { title: "Seed Processing", mtCount: "px-4 mt-4 mb-1",link:'/seed-processing' }, { title: "Seed to Seed", mtCount: "px-4 mb-1" ,link:'/seed-to-seed'}, { title: "GFood Processing", mtCount: "px-4 mb-1",link:'/food-processing' }, { title: "PSPL Feeds", mtCount: "px-4 mb-1",link:'/pspl-feed' }, { title: "Agro Chemicals", mtCount: 'px-4',link:'/agro-chemicals' }
         ]
     }
 ];

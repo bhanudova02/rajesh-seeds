@@ -67,3 +67,36 @@
 }
 
 
+
+
+.underline-custom {
+  position: relative;
+}
+
+.underline-custom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust based on desired space between text and underline */
+  height: 2px;
+  width: 60%; /* You can adjust the width to suit your needs */
+  background-color: rgb(8, 218, 19); /* Custom color */
+  transition: width 0.3s ease;
+  border-radius: 50%;
+}
+
+.underline-custom-mul {
+  position: relative;
+}
+
+.underline-custom-mul::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust based on desired space between text and underline */
+  height: 2px;
+  width: 60%; /* You can adjust the width to suit your needs */
+  background-color: green; /* Custom color */
+  transition: width 0.3s ease;
+  border-radius: 50%;
+}

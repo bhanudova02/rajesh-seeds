@@ -1,6 +1,21 @@
+import { useState } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export function Footer() {
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const isActive = (path) => location.pathname == path;
+    const [isLoading, setIsLoading] = useState(false);
+    const handelNavigation = (url) => {
+        setIsLoading(true);
+        setTimeout(() => {
+            window.location.href = url
+        }, 100)
+    }
+
+
     return (
         <footer className="bg-[#1F2937] text-white">
             <div className="w-[90%] md:max-w-7xl mx-auto pt-20 pb-10">
@@ -14,7 +29,11 @@ export function Footer() {
                             <li>Prestigious Clients</li>
                             <li>Infrastructure</li>
                             <li>Careers</li>
-                            <li>Privacy Policy</li>
+                            <li>
+                                <button onClick={() => { handelNavigation('/privacypolicy') }} className={`cursor-pointer ${isActive('/privacypolicy') ? 'underline-custom' : ''}`}>
+                                    Privacy Policy
+                                </button>
+                            </li>
                         </ul>
                     </div>
                     <div>

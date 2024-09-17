@@ -14,7 +14,7 @@ export function VMV() {
     };
 
     return (
-        <div className="bg-gradient-to-br from-blue-100 to-purple-100">
+        <div className="bg-slate-50">
             <div className="w-[90%] md:max-w-7xl mx-auto py-20">
                 <div>
                     <div className=' flex flex-col justify-center items-center'>

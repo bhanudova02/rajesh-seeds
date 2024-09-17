@@ -32,6 +32,7 @@ import { InfrastructureStatus } from './components/infra/InfrastructureStatus'
 import InfrastructureTab from './components/infra/InfrastructureTab'
 import { CareerComponent } from './components/career/CareerComponent'
 import { ContactUs } from './components/contact-us/ContactUs'
+import { PrivacyPolicy } from './components/privacy-policy/PrivacyPolicy'
 function App() {
 
   return (
@@ -133,7 +134,13 @@ function App() {
         <Route path="contact-us" element={
           <div>
             <HeroComponent img={'/ContactUsBanner.jpg'} title={"Feel Free To ContactUs"} />
-            <ContactUs/>
+            <ContactUs />
+          </div>
+        } />
+        <Route path="privacypolicy" element={
+          <div>
+            <HeroComponent img={'/Bannerprivacypolicy.jpg'} title={"Our Company Privacy & Policy"} />
+            <PrivacyPolicy />
           </div>
         } />
 

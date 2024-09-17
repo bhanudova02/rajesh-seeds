@@ -29,7 +29,10 @@ export function NavBarComponent() {
                     <CgMenuRight className="text-2xl" />
                 </SheetTrigger>
                 <SheetContent side={"left"} className="w-64 bg-gray-800 text-white max-h-screen overflow-y-auto">
-                    <div onClick={() => { handelNavigation('/') }} className="pb-4 border-b border-gray-700">
+                    {/* <div onClick={() => { handelNavigation('/') }} className="pb-4 border-b border-gray-700">
+
+                    </div> */}
+                    <div className="pb-4 border-b border-gray-700">
                         <img src="/logo.png" alt="Logo" className="w-24" />
                     </div>
                     <SheetHeader>
@@ -106,10 +109,10 @@ export function NavBarComponent() {
                     <div className="border-t border-gray-700 pt-4">
                         <h2 className="px-3 mb-2">Contact Us</h2>
                         <div className="grid grid-cols-4 px-3">
-                            <FaFacebookSquare onClick={()=>window.open('https://www.facebook.com','_blank')} className="text-3xl cursor-pointer" />
-                            <FaInstagram onClick={()=>window.open('https://www.instagram.com','_blank')} className="text-3xl cursor-pointer" />
-                            <FaWhatsapp onClick={()=>window.open('https://web.whatsapp.com/','_blank')} className="text-3xl cursor-pointer" />
-                            <FaTelegram onClick={()=>window.open('https://web.telegram.org/','_blank')} className="text-3xl cursor-pointer" />
+                            <FaFacebookSquare onClick={() => window.open('https://www.facebook.com', '_blank')} className="text-3xl cursor-pointer" />
+                            <FaInstagram onClick={() => window.open('https://www.instagram.com', '_blank')} className="text-3xl cursor-pointer" />
+                            <FaWhatsapp onClick={() => window.open('https://web.whatsapp.com/', '_blank')} className="text-3xl cursor-pointer" />
+                            <FaTelegram onClick={() => window.open('https://web.telegram.org/', '_blank')} className="text-3xl cursor-pointer" />
                         </div>
                     </div>
                 </SheetContent>

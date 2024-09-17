@@ -36,10 +36,10 @@ export default function Header() {
                         </div>
                         <div className='flex items-center gap-1 md:gap-3 lg:gap-4'>
                             <h4 className='font-bold text-base md:text-lg'>Follow Us:</h4>
-                            <FaInstagram  onClick={()=>window.open('https://www.instagram.com', '_blank')} className='text-xl md:text-2xl cursor-pointer hover:bg-white hover:rounded-full hover:p-1 hover:duration-300 transition-all ease-out'/>
-                            <FaFacebook onClick={()=>window.open('https://www.facebook.com','_blank')} className='text-xl md:text-2xl cursor-pointer hover:bg-white hover:rounded-full hover:p-1 hover:duration-300 transition-all ease-out'/>
-                            <FaSquareXTwitter onClick={()=>window.open('https://twitter.com','_blank')} className='text-xl md:text-2xl cursor-pointer hover:bg-white hover:rounded-full hover:p-1 hover:duration-300 transition-all ease-out'/>
-                            <FaLinkedin onClick={()=>window.open('https://www.linkedin.com','_blank')} className='text-xl md:text-2xl cursor-pointer hover:bg-white hover:rounded-full hover:p-1 hover:duration-300 transition-all ease-out'/>
+                            <FaInstagram  onClick={()=>window.open('https://www.instagram.com', '_blank')} className='text-xl md:text-2xl cursor-pointer md:hover:bg-white md:hover:rounded-full md:hover:p-1 md:hover:duration-300 transition-all ease-out'/>
+                            <FaFacebook onClick={()=>window.open('https://www.facebook.com','_blank')} className='text-xl md:text-2xl cursor-pointer md:hover:bg-white md:hover:rounded-full md:hover:p-1 md:hover:duration-300 transition-all ease-out'/>
+                            <FaSquareXTwitter onClick={()=>window.open('https://twitter.com','_blank')} className='text-xl md:text-2xl cursor-pointer md:hover:bg-white md:hover:rounded-full md:hover:p-1 md:hover:duration-300 transition-all ease-out'/>
+                            <FaLinkedin onClick={()=>window.open('https://www.linkedin.com','_blank')} className='text-xl md:text-2xl cursor-pointer md:hover:bg-white md:hover:rounded-full md:hover:p-1 md:hover:duration-300 transition-all ease-out'/>
                         </div>
                     </div>
                 </div>

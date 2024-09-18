@@ -118,7 +118,7 @@ function App() {
 
           <Route path="rspl-feed" element={
             <div>
-              <HeroComponent img={'/AnimalFeedBanner.jpg'} title={"Welcome To PSPL Feeds"} />
+              <HeroComponent img={'/AnimalFeedBanner.jpg'} title={"Welcome To RSPL Feeds"} />
               <FeedWhoWeAre />
               <FeedOurStrengths />
               <FeedWhyChooseUs />
@@ -143,7 +143,7 @@ function App() {
           } />
           <Route path="career" element={
             <div>
-              <HeroComponent img={'/Carrer.jpg'} title={"Career Growth With PSPL"} />
+              <HeroComponent img={'/Carrer.jpg'} title={"Career Growth With RSPL"} />
               <CareerComponent />
             </div>
           } />

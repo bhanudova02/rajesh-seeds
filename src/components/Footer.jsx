@@ -56,7 +56,7 @@ export function Footer() {
                                 <button className={`${isActive('/food-processing') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/food-processing') }}>Food Processing</button>
                             </li>
                             <li>
-                                <button className={`${isActive('/rspl-feed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/rspl-feed') }}>PSPL Feeds</button>
+                                <button className={`${isActive('/rspl-feed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/rspl-feed') }}>RSPL Feeds</button>
 
                             </li>
                             <li>

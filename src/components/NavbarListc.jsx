@@ -62,7 +62,7 @@ export function NavbarList() {
                                 <button className={`${isActive('/food-processing') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/food-processing') }}>Food Processing</button>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
-                                <button className={`${isActive('/rspl-feed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/rspl-feed') }}>PSPL Feeds</button>
+                                <button className={`${isActive('/rspl-feed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/rspl-feed') }}>RSPL Feeds</button>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
                                 <button className={`${isActive('/agro-chemicals') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/agro-chemicals') }}>Agro Chemicals</button>

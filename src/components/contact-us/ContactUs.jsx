@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import { IoClose } from 'react-icons/io5';
 
 export function ContactUs() {
-    const [showModal, setShowModal] = useState(true);
+    const [showModal, setShowModal] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
     const form = useRef();

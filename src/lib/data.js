@@ -1,9 +1,3 @@
-export const headerData = [
-    { "title": "Home", "url": "/" }, { "title": "Seed Processing", "": "/seed_processing" },
-    { "title": "Seed To Seed", "url": "/seed_to_seed" }, { "title": "Food Processing", "url": "/food_processing" },
-    { "title": "Prasad Feeds", "url": "/prasad_feeds" }, { "title": "Agro Chemicals", "url": "/chemical" }
-]
-
 export const Carousel_Home_Data = [
     {
         image: "/home_banner1.jpg",
@@ -68,7 +62,7 @@ export const AccordionData = [
     {
         "title": "Services",
         "items": [
-            { title: "Seed Processing", mtCount: "px-4 mt-4 mb-1",link:'/seed-processing' }, { title: "Seed to Seed", mtCount: "px-4 mb-1" ,link:'/seed-to-seed'}, { title: "GFood Processing", mtCount: "px-4 mb-1",link:'/food-processing' }, { title: "PSPL Feeds", mtCount: "px-4 mb-1",link:'/pspl-feed' }, { title: "Agro Chemicals", mtCount: 'px-4',link:'/agro-chemicals' }
+            { title: "Seed Processing", mtCount: "px-4 mt-4 mb-1",link:'/seed-processing' }, { title: "Seed to Seed", mtCount: "px-4 mb-1" ,link:'/seed-to-seed'}, { title: "GFood Processing", mtCount: "px-4 mb-1",link:'/food-processing' }, { title: "PSPL Feeds", mtCount: "px-4 mb-1",link:'/rspl-feed' }, { title: "Agro Chemicals", mtCount: 'px-4',link:'/agro-chemicals' }
         ]
     }
 ];

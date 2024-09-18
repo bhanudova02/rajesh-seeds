@@ -116,7 +116,7 @@ function App() {
           }
           />
 
-          <Route path="pspl-feed" element={
+          <Route path="rspl-feed" element={
             <div>
               <HeroComponent img={'/AnimalFeedBanner.jpg'} title={"Welcome To PSPL Feeds"} />
               <FeedWhoWeAre />

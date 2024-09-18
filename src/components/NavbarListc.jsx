@@ -49,7 +49,7 @@ export function NavbarList() {
                 <div className="cursor-pointer">
                     <DropdownMenu className="relative">
                         <DropdownMenuTrigger asChild className="cursor-pointer">
-                            <h2 className={`${isActiveMultiple(['/seed-processing', '/seed-to-seed', '/food-processing', '/pspl-feed', '/agro-chemicals']) ? 'underline-custom' : ''}`}>Services</h2>
+                            <h2 className={`${isActiveMultiple(['/seed-processing', '/seed-to-seed', '/food-processing', '/rspl-feed', '/agro-chemicals']) ? 'underline-custom' : ''}`}>Services</h2>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="absolute -left-8">
                             <DropdownMenuItem>
@@ -62,7 +62,7 @@ export function NavbarList() {
                                 <button className={`${isActive('/food-processing') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/food-processing') }}>Food Processing</button>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
-                                <button className={`${isActive('/pspl-feed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/pspl-feed') }}>PSPL Feeds</button>
+                                <button className={`${isActive('/rspl-feed') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/rspl-feed') }}>PSPL Feeds</button>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
                                 <button className={`${isActive('/agro-chemicals') ? 'underline-custom-mul' : ''}`} onClick={() => { handelNavigation('/agro-chemicals') }}>Agro Chemicals</button>

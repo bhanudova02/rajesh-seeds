@@ -69,7 +69,7 @@ export function NavBarComponent() {
                                     <li className="bg-neutral-900 rounded-md p-2">
                                         <AccordionItem value="item-2">
                                             <AccordionTrigger>
-                                                <button className={`${isActiveMultiple(['/seed-processing', '/seed-to-seed', '/food-processing', '/pspl-feed', '/agro-chemicals']) ? 'underline-custom' : ''}`} P>
+                                                <button className={`${isActiveMultiple(['/seed-processing', '/seed-to-seed', '/food-processing', '/rspl-feed', '/agro-chemicals']) ? 'underline-custom' : ''}`} P>
                                                     Services
                                                 </button>
                                             </AccordionTrigger>

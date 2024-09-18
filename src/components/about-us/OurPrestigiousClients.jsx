@@ -23,7 +23,7 @@ export function OurPrestigiousClients() {
                                 </h3>
                             </div>
                             <p className="text-gray-600">
-                                PSPL, as an industry leader, has established high standards by deeply understanding its customers' businesses.
+                                RSPL, as an industry leader, has established high standards by deeply understanding its customers' businesses.
                             </p>
                         </div>
 
@@ -36,7 +36,7 @@ export function OurPrestigiousClients() {
                                 </h3>
                             </div>
                             <p className="text-gray-600">
-                                With keen insight into the priorities of global agro companies, PSPL consistently meets their needs.
+                                With keen insight into the priorities of global agro companies, RSPL consistently meets their needs.
                             </p>
                         </div>
 
@@ -62,7 +62,7 @@ export function OurPrestigiousClients() {
                                 </h3>
                             </div>
                             <p className="text-gray-600">
-                                PSPL's commitment to innovation ensures it stays ahead in a rapidly evolving market. Its focus on sustainability and excellence solidifies its position as a trusted partner.
+                                RSPL's commitment to innovation ensures it stays ahead in a rapidly evolving market. Its focus on sustainability and excellence solidifies its position as a trusted partner.
                             </p>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ export function OurPrestigiousClients() {
                     <div className='shadow-md border-box-four bg-white p-10 mt-12 rounded-md'>
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 mt-12">
                             {ClientsLogos.map((data, index) => (
-                                <div key={index} className="flex justify-center items-center border-2 shadow rounded-md ">
+                                <div key={index} className="flex justify-center items-center border-2 shadow rounded-md">
                                     <img
                                         src={data.img}
                                         alt={`Client ${index + 1}`}
@@ -82,8 +82,7 @@ export function OurPrestigiousClients() {
                     </div>
 
                 </div>
-
             </div>
-        </div >
+        </div>
     );
 }

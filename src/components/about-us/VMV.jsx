@@ -3,13 +3,13 @@ import { FaLightbulb, FaRocket, FaHandshake, FaChartLine } from 'react-icons/fa'
 
 export function VMV() {
     const content = {
-        vision: 'We are driven by our vision to become the most competitive and sought-after service provider to Agriculture and allied institutions across the globe. We are now a growth partner in outsourced infrastructure, a manufacturer for the biggest names in the industry',
-        mission: 'Our mission is to make quality products and provide quality services to our customers in turn leading to quality life for the farming community. We are dedicated to deliver the highest quality of customer satisfaction, with a sense of warmth, friendliness, individual pride, and care for the environment; always sustaining the company spirit.',
+        vision: 'Our vision is to be the leading and most trusted service provider in the agricultural sector globally. At Rajesh Seeds, we are committed to being a key partner in outsourced infrastructure and a manufacturer for the major industry players.',
+        mission: 'Our mission is to deliver high-quality products and services that enhance the lives of farmers and the agricultural community. We aim to provide exceptional customer satisfaction with warmth, friendliness, and environmental care, while upholding the spirit of Rajesh Seeds.',
         values: [
-            { icon: <FaLightbulb />, title: 'Innovation', description: 'Constantly pushing boundaries and exploring new ideas' },
-            { icon: <FaRocket />, title: 'Excellence', description: 'Striving for the highest quality in everything we do' },
-            { icon: <FaHandshake />, title: 'Collaboration', description: 'Working together to achieve common goals' },
-            { icon: <FaChartLine />, title: 'Growth', description: 'Fostering personal and professional development' }
+            { icon: <FaLightbulb />, title: 'Innovation', description: 'Pushing boundaries and exploring new ideas to stay ahead' },
+            { icon: <FaRocket />, title: 'Excellence', description: 'Striving for the highest standards in all our endeavors' },
+            { icon: <FaHandshake />, title: 'Collaboration', description: 'Working together to achieve common goals and mutual success' },
+            { icon: <FaChartLine />, title: 'Growth', description: 'Encouraging personal and professional development for continuous improvement' }
         ]
     };
 
@@ -17,7 +17,7 @@ export function VMV() {
         <div className="bg-slate-50">
             <div className="w-[90%] md:max-w-7xl mx-auto py-20">
                 <div>
-                    <div className=' flex flex-col justify-center items-center'>
+                    <div className='flex flex-col justify-center items-center'>
                         <div className='border-2 border-lime-600 bg-white p-1 rounded-full'>
                             <img src="/leaf.png" alt='leaf' className='w-10 p-2' />
                         </div>

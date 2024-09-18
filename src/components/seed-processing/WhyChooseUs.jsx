@@ -4,33 +4,33 @@ export function WhyChooseUs() {
     const features = [
         {
             icon: <FaShieldAlt className="text-2xl md:text-4xl text-indigo-500 group-hover:text-white transition-colors duration-300" />,
-            title: 'IP Protection',
-            description: 'We prioritize genetic resource preservation, ensure confidentiality, and adhere to industry standards for seed IP protection.'
+            title: 'Intellectual Property Security',
+            description: 'We emphasize safeguarding genetic resources, maintaining confidentiality, and complying with industry standards for IP security.'
         },
         {
             icon: <FaSeedling className="text-2xl md:text-4xl text-lime-500 group-hover:text-white transition-colors duration-300" />,
-            title: 'Vast Experience',
-            description: 'With over 35 years of expertise, we have perfected our seed processing techniques using a wealth of knowledge and historical data.'
+            title: 'Extensive Expertise',
+            description: 'With over 35 years of industry experience, we have refined our seed processing methods using extensive knowledge and historical data.'
         },
         {
             icon: <FaStar className="text-2xl md:text-4xl text-yellow-500 group-hover:text-white transition-colors duration-300" />,
-            title: 'Quality of Seeds',
-            description: 'We utilize industry standards to produce high-quality seeds, ensuring improved crop yields in our advanced facilities.'
+            title: 'Premium Seed Quality',
+            description: 'We adhere to rigorous standards to produce superior quality seeds, ensuring enhanced crop yields in our cutting-edge facilities.'
         },
         {
             icon: <FaTools className="text-2xl md:text-4xl text-blue-500 group-hover:text-white transition-colors duration-300" />,
-            title: 'Infrastructure',
-            description: 'We provide full support, from land to ongoing management, for clients requiring dedicated infrastructure.'
+            title: 'Advanced Infrastructure',
+            description: 'We offer comprehensive support, from land acquisition to ongoing management, for clients needing dedicated infrastructure.'
         },
         {
             icon: <FaHandsHelping className="text-2xl md:text-4xl text-green-500 group-hover:text-white transition-colors duration-300" />,
-            title: 'Client-Centric',
-            description: 'We meticulously tailor our seed processing lines to match the unique requirements of every client.'
+            title: 'Client-Focused Approach',
+            description: 'We carefully tailor our seed processing lines to meet the specific needs of each client, ensuring personalized service.'
         },
         {
             icon: <FaTruck className="text-2xl md:text-4xl text-red-500 group-hover:text-white transition-colors duration-300" />,
-            title: 'Commitment',
-            description: 'We guarantee prompt delivery of high-quality processed seeds, enabling clients to carry out their plans on time.'
+            title: 'Dependable Delivery',
+            description: 'We ensure timely delivery of high-quality processed seeds, helping clients achieve their goals on schedule.'
         }
     ];
 
@@ -64,15 +64,15 @@ export function WhyChooseUs() {
                     <div className="mt-12 text-center">
                         <img
                             src="/SeedProcessingBottom.jpg"
-                            alt="SeedProcessingBottom"
+                            alt="Seed Processing Facilities"
                             className="rounded-lg mx-auto h-full w-full object-contain"
                         />
-                        <p className="mt-4 text-black max-w-2xl mx-auto f font-semibold bg-green-400/10 rounded-2xl p-4 ">
-                            Join thousands of satisfied customers who have chosen us for their business needs. Experience the difference of working with a team dedicated to your success.
+                        <p className="mt-4 text-black max-w-2xl mx-auto font-semibold bg-green-400/10 rounded-2xl p-4 ">
+                            Join the multitude of satisfied clients who have chosen us for their business needs. Discover the advantage of partnering with a team committed to your success.
                         </p>
                     </div>
                 </section>
             </div>
         </div>
-    )
+    );
 }

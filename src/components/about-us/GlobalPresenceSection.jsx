@@ -45,8 +45,8 @@ export function GlobalPresenceSection() {
                             ))}
                         </div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-lg p-8">
-                        <img src="/globalpresence.jpg" alt="Global Presence" className="w-full h-full" />
+                    <div className="bg-teal-50 rounded-lg shadow-lg p-8">
+                        <img src="/map_infographic.png" alt="Global Presence" className="w-full h-full" />
                     </div>
                 </div>
             </div>

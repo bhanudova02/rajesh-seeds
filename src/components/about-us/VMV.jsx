@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLightbulb, FaRocket, FaHandshake, FaChartLine } from 'react-icons/fa';
+import { FaLightbulb, FaRocket, FaHandshake, FaChartLine, FaSeedling } from 'react-icons/fa';
 
 export function VMV() {
     const content = {
@@ -18,8 +18,8 @@ export function VMV() {
             <div className="w-[90%] md:max-w-7xl mx-auto py-20">
                 <div>
                     <div className='flex flex-col justify-center items-center'>
-                        <div className='border-2 border-lime-600 bg-white p-1 rounded-full'>
-                            <img src="/leaf.png" alt='leaf' className='w-10 p-2' />
+                        <div className='border-2 border-lime-600 bg-white p-2 rounded-full'>
+                           <FaSeedling className='text-3xl'/>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-center text-blue-800 mb-12">Our Vision & Mission</h1>
                     </div>

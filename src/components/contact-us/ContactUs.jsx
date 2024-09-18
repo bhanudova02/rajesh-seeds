@@ -1,63 +1,65 @@
-import React, { useState } from 'react';
-import { FaUser, FaEnvelope, FaBuilding, FaPhone, FaChevronDown, FaPaperPlane, FaMapMarkerAlt } from 'react-icons/fa';
+import React, { useRef, useState } from 'react';
+import { FaUser, FaEnvelope, FaPhone, FaChevronDown, FaPaperPlane, FaMapMarkerAlt } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
+import { IoClose } from 'react-icons/io5';
 
 export function ContactUs() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        message: ''
-    });
-    const [errors, setErrors] = useState({});
+    const [showModal, setShowModal] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
-    const services = ['Seed Processing', 'Food Processing', 'Chemical', 'Animal Feeds', 'Consulting'];
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevData => ({
-            ...prevData,
-            [name]: value
-        }));
-        if (errors[name]) {
-            setErrors(prevErrors => ({ ...prevErrors, [name]: '' }));
-        }
-    };
-
-    const validateEmail = (email) => {
-        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return re.test(String(email).toLowerCase());
-    };
-
-    const handleSubmit = (e) => {
+    const form = useRef();
+    const sendEmail = (e) => {
         e.preventDefault();
-        const newErrors = {};
-        if (!formData.name.trim()) newErrors.name = 'Name is required';
-        if (!formData.email.trim()) newErrors.email = 'Email is required';
-        else if (!validateEmail(formData.email)) newErrors.email = 'Invalid email format';
-        if (!formData.phone.trim()) newErrors.phone = 'Phone number is required';
-        if (!formData.service) newErrors.service = 'Please select a service';
-        if (!formData.message.trim()) newErrors.message = 'Message is required';
-
-        if (Object.keys(newErrors).length === 0) {
-            // Submit form data
-            console.log('Form submitted:', formData);
-            // Reset form
-            setFormData({ name: '', email: '', company: '', phone: '', service: '', message: '' });
-        } else {
-            setErrors(newErrors);
-        }
+        setIsLoading(true)
+        emailjs
+            .sendForm('service_3ru5c5h', 'template_t15dvg5', form.current, {
+                publicKey: 'oR5wWw8rYBM6xTxNu',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    form.current.reset();
+                    setIsLoading(false);
+                    setShowModal(true)
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
     };
     return (
         <div className="bg-gray-100 py-16">
             <div className="w-[90%] md:max-w-6xl mx-auto">
-                {/* Heading */}
+                {isLoading && (
+                    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-90">
+                        <div className='flex items-center gap-4'>
+                            <div className="w-12 h-12 border-4 border-t-transparent rounded-full animate-spin border-blue-500"></div>
+                            <h2 className='font-bold text-white text-xl'>Loading...</h2>
+                        </div>
+                    </div>
+                )}
+
+                {showModal && (
+                    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+                        <div className="bg-white px-4 text-center py-6 rounded-lg shadow-md relative w-[80%] md:w-[40%] lg:w-[25%]">
+                            <h2 className="text-base font-bold ">Message Sent Successfully </h2>
+                            <p className='text-sm '>
+                                Thanks for reaching out! I'll get back to you within the next 24 hours. <span className='text-green-600 font-bold text-xl'>&#10003;</span>
+                            </p>
+                            <button
+                                className="bg-rose-500 absolute top-3 right-3 text-white hover:cursor-pointer hover:bg-lime-400 font-bold  rounded-full inline-flex items-center text-sm "
+                                onClick={() => setShowModal(false)}
+                            >
+                                <IoClose className="text-lg" />
+                            </button>
+                        </div>
+                    </div>
+                )}
                 <div className="bg-gray-100 w-full">
                     <div className="bg-white rounded-lg shadow-xl p-8 w-full flex flex-wrap">
                         <div className="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0">
                             <h2 className="text-3xl font-bold mb-6 text-gray-800">Contact Us</h2>
-                            <form onSubmit={handleSubmit} className="space-y-4">
+                            <form ref={form} onSubmit={sendEmail} className="space-y-4">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                                     <div className="mt-1 relative rounded-md shadow-sm">
@@ -65,18 +67,14 @@ export function ContactUs() {
                                             <FaUser className="h-5 w-5 text-gray-400" />
                                         </div>
                                         <input
+                                            required
                                             type="text"
                                             name="name"
                                             id="name"
-                                            className={`block w-full pl-10 pr-3 py-2 border ${errors.name ? 'border-red-300' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500`}
+                                            className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                                             placeholder="Your Name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            aria-invalid={errors.name ? 'true' : 'false'}
-                                            aria-describedby={errors.name ? 'name-error' : undefined}
                                         />
                                     </div>
-                                    {errors.name && <p className="mt-2 text-sm text-red-600" id="name-error">{errors.name}</p>}
                                 </div>
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
@@ -85,33 +83,12 @@ export function ContactUs() {
                                             <FaEnvelope className="h-5 w-5 text-gray-400" />
                                         </div>
                                         <input
+                                            required
                                             type="email"
                                             name="email"
                                             id="email"
-                                            className={`block w-full pl-10 pr-3 py-2 border ${errors.email ? 'border-red-300' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500`}
-                                            placeholder="you@example.com"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                            aria-invalid={errors.email ? 'true' : 'false'}
-                                            aria-describedby={errors.email ? 'email-error' : undefined}
-                                        />
-                                    </div>
-                                    {errors.email && <p className="mt-2 text-sm text-red-600" id="email-error">{errors.email}</p>}
-                                </div>
-                                <div>
-                                    <label htmlFor="company" className="block text-sm font-medium text-gray-700">Company</label>
-                                    <div className="mt-1 relative rounded-md shadow-sm">
-                                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                            <FaBuilding className="h-5 w-5 text-gray-400" />
-                                        </div>
-                                        <input
-                                            type="text"
-                                            name="company"
-                                            id="company"
                                             className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                                            placeholder="Your Company"
-                                            value={formData.company}
-                                            onChange={handleChange}
+                                            placeholder="you@example.com"
                                         />
                                     </div>
                                 </div>
@@ -122,62 +99,51 @@ export function ContactUs() {
                                             <FaPhone className="h-5 w-5 text-gray-400" />
                                         </div>
                                         <input
+                                            required
                                             type="tel"
                                             name="phone"
                                             id="phone"
-                                            className={`block w-full pl-10 pr-3 py-2 border ${errors.phone ? 'border-red-300' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500`}
+                                            className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                                             placeholder="Your Phone Number"
-                                            value={formData.phone}
-                                            onChange={handleChange}
-                                            aria-invalid={errors.phone ? 'true' : 'false'}
-                                            aria-describedby={errors.phone ? 'phone-error' : undefined}
                                         />
                                     </div>
-                                    {errors.phone && <p className="mt-2 text-sm text-red-600" id="phone-error">{errors.phone}</p>}
                                 </div>
                                 <div>
                                     <label htmlFor="service" className="block text-sm font-medium text-gray-700">Service</label>
                                     <div className="mt-1 relative rounded-md shadow-sm">
                                         <select
+                                            required
                                             name="service"
                                             id="service"
-                                            className={`block w-full pl-3 pr-10 py-2 border ${errors.service ? 'border-red-300' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none`}
-                                            value={formData.service}
-                                            onChange={handleChange}
-                                            aria-invalid={errors.service ? 'true' : 'false'}
-                                            aria-describedby={errors.service ? 'service-error' : undefined}
+                                            className="block w-full pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none"
                                         >
                                             <option value="">Select a service</option>
-                                            {services.map((service, index) => (
-                                                <option key={index} value={service}>{service}</option>
-                                            ))}
+                                            <option value="Seed Processing">Seed Processing</option>
+                                            <option value="Food Processing">Food Processing</option>
+                                            <option value="Agro Chemical">Agro Chemical</option>
+                                            <option value="Animal Feeds">Animal Feeds</option>
                                         </select>
                                         <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                                             <FaChevronDown className="h-5 w-5 text-gray-400" />
                                         </div>
                                     </div>
-                                    {errors.service && <p className="mt-2 text-sm text-red-600" id="service-error">{errors.service}</p>}
                                 </div>
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
                                     <div className="mt-1">
                                         <textarea
+                                            required
                                             name="message"
                                             id="message"
                                             rows="4"
-                                            className={`block w-full px-3 py-2 border ${errors.message ? 'border-red-300' : 'border-gray-300'} rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500`}
+                                            className="block w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                                             placeholder="Your Message"
-                                            value={formData.message}
-                                            onChange={handleChange}
-                                            aria-invalid={errors.message ? 'true' : 'false'}
-                                            aria-describedby={errors.message ? 'message-error' : undefined}
                                         ></textarea>
                                     </div>
-                                    {errors.message && <p className="mt-2 text-sm text-red-600" id="message-error">{errors.message}</p>}
                                 </div>
                                 <div>
                                     <button
-                                        type="submit"
+                                        type="submit" value="Send"
                                         className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out"
                                     >
                                         <FaPaperPlane className="mr-2 h-5 w-5" />
@@ -219,7 +185,6 @@ export function ContactUs() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     );

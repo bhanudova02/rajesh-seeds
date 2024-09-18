@@ -6,28 +6,28 @@ const InfrastructureTab = () => {
 
     const infrastructureData = {
         equipment: {
-            title: 'Our Equipment',
-            description: 'State-of-the-art machinery for efficient seed processing.',
+            title: 'Advanced Seed Processing Equipment',
+            description: 'Our equipment ensures precision and efficiency at every stage of seed processing.',
             image: '/OurEquipment.jpg',
-            details: 'Our seed processing equipment includes cleaners, graders, dryers, and treatment machines designed for optimal seed quality.',
+            details: 'We leverage top-tier seed processing machinery, including cutting-edge cleaners, precision graders, advanced dryers, and effective seed treatment machines. Each machine is designed to optimize seed quality and reduce processing time, delivering consistent, high-quality results.',
         },
         technology: {
-            title: 'Advanced Technologies',
-            description: 'Cutting-edge technologies enhancing seed processing efficiency.',
+            title: 'Innovative Processing Technologies',
+            description: 'Harnessing modern technologies to transform seed processing workflows.',
             image: '/AdvancedTechnologies.jpg',
-            details: 'We implement AI-driven sorting systems, IoT-enabled monitoring, and automated quality control processes.',
+            details: 'Our operations incorporate AI-powered sorting systems, IoT-based monitoring for real-time data analytics, and automated quality control, ensuring that each seed batch meets global standards. These technologies help us increase operational efficiency and reduce wastage.',
         },
         facilities: {
-            title: 'Processing Facilities',
-            description: 'Modern facilities designed for optimal seed processing workflows.',
+            title: 'World-Class Processing Facilities',
+            description: 'State-of-the-art facilities designed to optimize seed processing.',
             image: '/ProcessingFacilities.jpg',
-            details: 'Our facilities are equipped with climate-controlled storage, ergonomic workstations, and efficient logistics systems.',
+            details: 'Our modern facilities include climate-controlled storage units, ergonomic workstations, and highly efficient logistics systems that streamline the seed processing workflow. These infrastructure investments ensure smooth operations, high-quality output, and timely deliveries.',
         },
         sustainability: {
-            title: 'Sustainable Practices',
-            description: 'Eco-friendly approaches in seed processing infrastructure.',
+            title: 'Sustainable Seed Processing Practices',
+            description: 'Eco-conscious infrastructure aimed at reducing environmental impact.',
             image: '/SustainablePractices.jpg',
-            details: 'We incorporate renewable energy sources, water recycling systems, and biodegradable packaging solutions.',
+            details: 'Our commitment to sustainability includes the use of renewable energy, water recycling systems, and biodegradable packaging materials. These practices not only reduce our carbon footprint but also ensure that we contribute positively to the environment while maintaining high standards in seed processing.',
         },
     };
 
@@ -35,7 +35,7 @@ const InfrastructureTab = () => {
         <div className="bg-gray-100 py-20">
             <div className='w-[90%] md:max-w-7xl mx-auto'>
                 <h2 className="text-center font-bold text-3xl md:text-5xl mb-6 md:mb-8 text-green-800">
-                    Processing Infrastructure
+                    Our Cutting-Edge Processing Infrastructure
                 </h2>
                 <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
                     {/* Add horizontal scrolling for the tab buttons */}

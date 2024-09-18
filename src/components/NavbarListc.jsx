@@ -23,6 +23,7 @@ export function NavbarList() {
 
     return (
         <div>
+             {isLoading && <LoadingPopup />}
             <div className="hidden md:flex items-center md:gap-6 lg:gap-8 font-semibold">
                 <button onClick={() => { handelNavigation('/') }}>
                     <div className={`cursor-pointer ${isActive('/') ? 'underline-custom' : ''}`}>

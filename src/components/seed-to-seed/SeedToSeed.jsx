@@ -13,10 +13,10 @@ export function SeedToSeed() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            At PSPL, we offer comprehensive 'Seed-to-Seed' services, handling every step with expertise and dedication. Our prime agricultural land and commitment to quality ensure your seeds are cultivated and multiplied with utmost care.
+                            At RSPL, we provide comprehensive 'Seed-to-Seed' services, meticulously managing every step with expertise and care. Our top-tier agricultural land and commitment to quality ensure that your seeds are cultivated and multiplied with precision.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            Our state-of-the-art facilities and experienced team guarantee that your entrusted seeds will be returned in greater quantities, meeting the highest industry standards.
+                            With our cutting-edge facilities and experienced team, we guarantee that your entrusted seeds will be returned in larger quantities, adhering to the highest industry standards.
                         </p>
                         <div className="mt-8">
                             <a href="#" className="inline-block bg-green-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
@@ -39,4 +39,3 @@ export function SeedToSeed() {
         </div>
     )
 }
-

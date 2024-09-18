@@ -10,20 +10,20 @@ export function FoodWhyChooseUs() {
         },
         {
             id: '02',
-            title: 'IQF Facility',
-            description: 'Our advanced IQF facility rapidly freezes produce, preserving its freshness and nutrients for optimal quality.',
+            title: 'Advanced Freezing',
+            description: 'Our state-of-the-art freezing technology rapidly preserves the freshness and nutrients of our produce for optimal quality.',
             icon: <FaSnowflake className="text-4xl text-blue-500 mb-4" />
         },
         {
             id: '03',
-            title: 'Export-oriented Units',
-            description: 'We deliver premium fruits and vegetables to international markets, meeting global quality standards.',
+            title: 'Global Reach',
+            description: 'We cater to international markets, ensuring our fruits and vegetables meet global quality standards.',
             icon: <FaGlobeAmericas className="text-4xl text-indigo-500 mb-4" />
         },
         {
             id: '04',
-            title: 'Multiple Food Products',
-            description: 'We offer a wide range of fresh, frozen, and value-added food products to meet diverse market needs.',
+            title: 'Diverse Product Range',
+            description: 'We offer a variety of fresh, frozen, and value-added food products to meet the needs of different markets.',
             icon: <FaAppleAlt className="text-4xl text-red-500 mb-4" />
         }
     ];
@@ -47,7 +47,6 @@ export function FoodWhyChooseUs() {
                     ))}
                 </div>
             </div>
-
         </div>
     )
 }

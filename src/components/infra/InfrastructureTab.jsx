@@ -35,7 +35,7 @@ const InfrastructureTab = () => {
         <div className="bg-gray-100 py-20">
             <div className='w-[90%] md:max-w-7xl mx-auto'>
                 <h2 className="text-center font-bold text-3xl md:text-5xl mb-6 md:mb-8 text-green-800">
-                    Our Cutting-Edge Processing Infrastructure
+                    Processing Infrastructure
                 </h2>
                 <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
                     {/* Add horizontal scrolling for the tab buttons */}

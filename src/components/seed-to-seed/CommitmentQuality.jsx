@@ -3,12 +3,12 @@ import { FaSeedling, FaCheck, FaLeaf, FaUsers, FaCog, FaShieldAlt } from 'react-
 
 const CommitmentQuality = () => {
     const services = [
-        { icon: <FaSeedling />, title: 'Seed Production', description: 'High-quality seed production on prime agricultural land' },
-        { icon: <FaCheck />, title: 'Quality Control', description: 'Rigorous quality checks at every stage of production' },
-        { icon: <FaLeaf />, title: 'Cultivation', description: 'Expert cultivation techniques for optimal growth' },
-        { icon: <FaUsers />, title: 'Expert Team', description: 'Dedicated team of agricultural specialists' },
-        { icon: <FaCog />, title: 'Processing', description: 'State-of-the-art processing facilities' },
-        { icon: <FaShieldAlt />, title: 'Guarantees', description: 'Assured return of seeds meeting industry standards' }
+        { icon: <FaSeedling />, title: 'Seed Production', description: 'Premium seed production on top-tier agricultural land' },
+        { icon: <FaCheck />, title: 'Quality Control', description: 'Thorough quality checks at every stage of production' },
+        { icon: <FaLeaf />, title: 'Cultivation', description: 'Advanced cultivation methods for optimal seed growth' },
+        { icon: <FaUsers />, title: 'Expert Team', description: 'Skilled team of agricultural professionals' },
+        { icon: <FaCog />, title: 'Processing', description: 'Cutting-edge processing technology' },
+        { icon: <FaShieldAlt />, title: 'Guarantees', description: 'Guaranteed return of seeds that meet high industry standards' }
     ];
 
     return (
@@ -32,7 +32,6 @@ const CommitmentQuality = () => {
                 </div>
             </div>
 
-
             <div>
                 <div className='bg-teal-200/10 py-20'>
                     <section className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -44,13 +43,13 @@ const CommitmentQuality = () => {
                                 <div className="md:w-1/2 mb-6 md:mb-0 md:pr-8">
                                     <h3 className="text-2xl font-semibold text-green-600 mb-4">Care and Quality</h3>
                                     <p className="text-gray-700 mb-4">
-                                        At PSPL, we cultivate and multiply seeds with the utmost care, ensuring top-notch quality throughout the process. Our state-of-the-art facilities and experienced team work tirelessly to maintain the highest standards in seed production.
+                                        At RSPL, we handle seed cultivation and multiplication with the highest level of care, ensuring exceptional quality throughout the entire process. Our advanced facilities and skilled team are dedicated to upholding the highest standards in seed production.
                                     </p>
                                     <ul className="list-disc list-inside text-gray-700">
-                                        <li>Advanced cultivation techniques</li>
-                                        <li>Rigorous quality control measures</li>
-                                        <li>Cutting-edge processing equipment</li>
-                                        <li>Expert agricultural specialists</li>
+                                        <li>Innovative cultivation techniques</li>
+                                        <li>Strict quality control procedures</li>
+                                        <li>Modern processing equipment</li>
+                                        <li>Experienced agricultural professionals</li>
                                     </ul>
                                 </div>
                                 <div className="w-full md:w-1/2">

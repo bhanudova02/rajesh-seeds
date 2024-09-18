@@ -14,8 +14,8 @@ export function FeedWhyChooseUs() {
                             <FaClock className="text-2xl text-green-600 mr-4" />
                             <h1 className="text-xl font-bold text-green-600">01</h1>
                         </div>
-                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Instant & Ready to Use</h2>
-                        <p className="text-gray-600">Conveniently packaged for immediate use, saving you time and effort in feed preparation.</p>
+                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Ready for Immediate Use</h2>
+                        <p className="text-gray-600">Conveniently packaged for immediate use, saving you valuable time in feed preparation.</p>
                     </div>
 
                     {/* Card 2 */}
@@ -24,8 +24,8 @@ export function FeedWhyChooseUs() {
                             <FaAppleAlt className="text-2xl text-green-600 mr-4" />
                             <h1 className="text-xl font-bold text-green-600">02</h1>
                         </div>
-                        <h2 className="text-xl font-semibold mb-2 text-gray-800">High Nutrition Content</h2>
-                        <p className="text-gray-600">Enriched with essential nutrients to boost milk production and overall livestock health.</p>
+                        <h2 className="text-xl font-semibold mb-2 text-gray-800">High Nutritional Value</h2>
+                        <p className="text-gray-600">Packed with essential nutrients to enhance livestock health and productivity.</p>
                     </div>
 
                     {/* Card 3 */}
@@ -34,8 +34,8 @@ export function FeedWhyChooseUs() {
                             <FaShieldAlt className="text-2xl text-green-600 mr-4" />
                             <h1 className="text-xl font-bold text-green-600">03</h1>
                         </div>
-                        <h2 className="text-xl font-semibold mb-2 text-gray-800">UV Protected Packing</h2>
-                        <p className="text-gray-600">Packed with UV protection to maintain freshness and quality for up to 12 months.</p>
+                        <h2 className="text-xl font-semibold mb-2 text-gray-800">UV-Resistant Packaging</h2>
+                        <p className="text-gray-600">Our products are packed with UV protection to ensure freshness and quality for up to a year.</p>
                     </div>
 
                     {/* Card 4 */}
@@ -44,8 +44,8 @@ export function FeedWhyChooseUs() {
                             <FaBox className="text-2xl text-green-600 mr-4" />
                             <h1 className="text-xl font-bold text-green-600">04</h1>
                         </div>
-                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Compact Bale Size</h2>
-                        <p className="text-gray-600">Designed for efficient storage, allowing you to maximize space without compromising on quality.</p>
+                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Compact Bale Design</h2>
+                        <p className="text-gray-600">Efficient storage solutions with compact bales that save space without sacrificing quality.</p>
                     </div>
 
                     {/* Card 5 */}
@@ -54,8 +54,8 @@ export function FeedWhyChooseUs() {
                             <FaCalendarAlt className="text-2xl text-green-600 mr-4" />
                             <h1 className="text-xl font-bold text-green-600">05</h1>
                         </div>
-                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Year-Round Supply</h2>
-                        <p className="text-gray-600">Consistent availability throughout the year ensures your livestock never run out of essential feed.</p>
+                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Year-Round Availability</h2>
+                        <p className="text-gray-600">Ensuring a constant supply of feed throughout the year for uninterrupted livestock care.</p>
                     </div>
 
                     {/* Card 6 */}
@@ -64,8 +64,8 @@ export function FeedWhyChooseUs() {
                             <FaDollarSign className="text-2xl text-green-600 mr-4" />
                             <h1 className="text-xl font-bold text-green-600">06</h1>
                         </div>
-                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Affordable Price</h2>
-                        <p className="text-gray-600">Cost-effective solution that reduces reliance on concentrated feed, making it easier on your budget.</p>
+                        <h2 className="text-xl font-semibold mb-2 text-gray-800">Competitive Pricing</h2>
+                        <p className="text-gray-600">Affordable pricing that helps manage your budget while reducing dependence on expensive feed.</p>
                     </div>
                 </div>
             </div>

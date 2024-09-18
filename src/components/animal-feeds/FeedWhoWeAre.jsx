@@ -7,8 +7,8 @@ export function FeedWhoWeAre() {
                 <h2 className="text-center font-bold text-3xl md:text-5xl mb-6 md:mb-8">
                     Who <span className="text-blue-600">We Are</span>
                 </h2>
-                <p className='text-center'>
-                    Keeping in Mind, the benefit of Corn Silage, we have Introduced India's First branded packaged corn silage. It is the best high energy fodder for Dairy Animal available in India today. We are the first company in India to have technical collaboration for silage manufacturing with DuPont Pioneer ,USA. We source the best Hybrid and tests locally to ensure top-performing Corn Silage that suits animals. Plus, its packed with World Class packaging solution that make Silage secure for a longer duration.
+                <p className='text-center text-gray-700'>
+                    Keeping in mind the benefits of corn silage, we have introduced India's first branded packaged corn silage. It is the best high-energy fodder for dairy animals available in India today. We are the first company in India to have a technical collaboration for silage manufacturing with DuPont Pioneer, USA. We source the best hybrids and test locally to ensure top-performing corn silage that suits animals. Plus, it's packed with world-class packaging solutions that keep the silage secure for a longer duration.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 w-full lg:w-[80%] mx-auto">

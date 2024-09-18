@@ -2,9 +2,9 @@ import { FaIndustry, FaSnowflake, FaWarehouse } from 'react-icons/fa';
 
 export function FoodInfrastructure() {
     const capacities = [
-        { icon: <FaIndustry />, title: 'IQF Line Capacity', value: '2 MT/Hour' },
-        { icon: <FaSnowflake />, title: 'Blast Freezer Capacity', value: '48 MT' },
-        { icon: <FaWarehouse />, title: 'Frozen Store Capacity', value: '500+ MT' },
+        { icon: <FaIndustry />, title: 'IQF Line Capacity', value: '4 MT/Hour' },
+        { icon: <FaSnowflake />, title: 'Blast Freezer Capacity', value: '38 MT' },
+        { icon: <FaWarehouse />, title: 'Frozen Store Capacity', value: '300+ MT' },
     ];
 
     return (

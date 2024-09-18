@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import { FaSearch, FaFilter } from 'react-icons/fa';
 
 const vegetables = [
-    { name: 'Carrot', image: '/carrot.png', category: 'Root', description: 'Y&G Fresh: Our selection of farm-fresh fruits and vegetables, handpicked for their quality and flavor, offering you the best that each season has to offer.' },
-    { name: 'Cauliflower', image: '/cauliflower.png', category: 'Cruciferous', description: 'Y&G Frozen: A premium range of frozen fruits and vegetables, RTEs that lock in freshness and nutrients, providing healthy, delicious options year-round.' },
-    { name: 'Beet Root', image: '/beetroot.png', category: 'Root', description: 'Y&G Fresh: Sustainably grown and handpicked to ensure top quality and flavor.' },
-    { name: 'Potato', image: '/potato.png', category: 'Root', description: 'Y&G Value Adds: Pre-cut, ready-to-cook potato options for your convenience.' },
-    { name: 'Bitter Gourd', image: '/gourd.png', category: 'Gourd', description: 'Y&G Horticulture: Sustainably farmed and grown with care for the environment.' },
-    { name: 'Onion', image: '/onion.png', category: 'Bulb', description: 'Y&G Value Adds: Pre-cut onions that save you time and effort in the kitchen.' },
-    { name: 'Sweet Corn', image: '/corn.png', category: 'Bulb', description: 'Y&G Fresh: Crisp and sweet, our farm-fresh corn is packed with flavor.' },
-    { name: 'Bell Pepper', image: '/bell-pepper.png', category: 'Bulb', description: 'Y&G Fresh: Colorful and flavorful, perfect for salads and stir-fries.' },
-    { name: 'Edamame', image: '/edamame.png', category: 'Bulb', description: 'Y&G Frozen: Frozen edamame for a quick, healthy snack anytime.' },
-    { name: 'Green Chilli', image: '/green-chilli.png', category: 'Fruit', description: 'Y&G Fresh: Spicy and fresh, handpicked for bold flavor.' },
-    { name: 'Okra', image: '/okra.png', category: 'Fruit', description: 'Y&G Horticulture: Fresh okra grown sustainably for a delicious taste.' },
-    { name: 'Tomato', image: '/tomato.png', category: 'Fruit', description: 'Y&G Fresh: Juicy and ripe, perfect for sauces, salads, and more.' },
-    { name: 'Green Peas', image: '/GreenPeasIcon.png', category: 'Legume', description: 'Y&G Frozen: Our frozen peas retain their natural sweetness and nutrition.' },
-    { name: 'Spinach', image: '/SpinachIcon.png', category: 'Leafy Green', description: 'Y&G Horticulture: Fresh spinach, packed with vitamins and grown sustainably.' },
-    { name: 'Garlic', image: '/GarlicIcon.png', category: 'Bulb', description: 'Y&G Value Adds: Pre-peeled garlic, making cooking quick and easy.' },
-    { name: 'Drumstick', image: '/DrumstickIcon.png', category: 'Fruit', description: 'Y&G Fresh: Nutritious drumsticks, perfect for soups and curries.' }
+    { name: 'Carrot', image: '/carrot.png', category: 'Root', description: 'R&S Fresh: Our selection of farm-fresh fruits and vegetables, handpicked for their quality and flavor, offering you the best that each season has to offer.' },
+    { name: 'Cauliflower', image: '/cauliflower.png', category: 'Cruciferous', description: 'R&S Frozen: A premium range of frozen fruits and vegetables, RTEs that lock in freshness and nutrients, providing healthy, delicious options year-round.' },
+    { name: 'Beet Root', image: '/beetroot.png', category: 'Root', description: 'R&S Fresh: Sustainably grown and handpicked to ensure top quality and flavor.' },
+    { name: 'Potato', image: '/potato.png', category: 'Root', description: 'R&S Value Adds: Pre-cut, ready-to-cook potato options for your convenience.' },
+    { name: 'Bitter Gourd', image: '/gourd.png', category: 'Gourd', description: 'R&S Horticulture: Sustainably farmed and grown with care for the environment.' },
+    { name: 'Onion', image: '/onion.png', category: 'Bulb', description: 'R&S Value Adds: Pre-cut onions that save you time and effort in the kitchen.' },
+    { name: 'Sweet Corn', image: '/corn.png', category: 'Bulb', description: 'R&S Fresh: Crisp and sweet, our farm-fresh corn is packed with flavor.' },
+    { name: 'Bell Pepper', image: '/bell-pepper.png', category: 'Bulb', description: 'R&S Fresh: Colorful and flavorful, perfect for salads and stir-fries.' },
+    { name: 'Edamame', image: '/edamame.png', category: 'Bulb', description: 'R&S Frozen: Frozen edamame for a quick, healthy snack anytime.' },
+    { name: 'Green Chilli', image: '/green-chilli.png', category: 'Fruit', description: 'R&S Fresh: Spicy and fresh, handpicked for bold flavor.' },
+    { name: 'Okra', image: '/okra.png', category: 'Fruit', description: 'R&S Horticulture: Fresh okra grown sustainably for a delicious taste.' },
+    { name: 'Tomato', image: '/tomato.png', category: 'Fruit', description: 'R&S Fresh: Juicy and ripe, perfect for sauces, salads, and more.' },
+    { name: 'Green Peas', image: '/GreenPeasIcon.png', category: 'Legume', description: 'R&S Frozen: Our frozen peas retain their natural sweetness and nutrition.' },
+    { name: 'Spinach', image: '/SpinachIcon.png', category: 'Leafy Green', description: 'R&S Horticulture: Fresh spinach, packed with vitamins and grown sustainably.' },
+    { name: 'Garlic', image: '/GarlicIcon.png', category: 'Bulb', description: 'R&S Value Adds: Pre-peeled garlic, making cooking quick and easy.' },
+    { name: 'Drumstick', image: '/DrumstickIcon.png', category: 'Fruit', description: 'R&S Fresh: Nutritious drumsticks, perfect for soups and curries.' }
 ];
 
 const VegetableListingComponent = () => {

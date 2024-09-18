@@ -1,4 +1,4 @@
-import { FaWarehouse, FaSnowflake, FaCogs, FaBoxes } from "react-icons/fa"; // You can use any icon library you prefer
+import { FaWarehouse, FaSnowflake, FaCogs } from "react-icons/fa"; // You can use any icon library you prefer
 
 export function Infrastructure() {
     return (
@@ -10,22 +10,22 @@ export function Infrastructure() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <FaCogs className="text-4xl text-orange-500 mx-auto mb-4" />
-                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">28+</h3>
+                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">40+</h3>
                         <p className="text-lg text-gray-500">Drying Units</p>
                     </div>
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <FaSnowflake className="text-4xl text-blue-500 mx-auto mb-4" />
-                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">12+</h3>
+                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">20+</h3>
                         <p className="text-lg text-gray-500">MT Cold Storage Support</p>
                     </div>
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <FaCogs className="text-4xl text-green-500 mx-auto mb-4" />
-                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">20+</h3>
+                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">30+</h3>
                         <p className="text-lg text-gray-500">Conditioning Units</p>
                     </div>
                     <div className="bg-white p-8 shadow-lg rounded-lg">
                         <FaWarehouse className="text-4xl text-purple-500 mx-auto mb-4" />
-                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">3,000</h3>
+                        <h3 className="text-3xl font-semibold text-gray-700 mb-2">5,000</h3>
                         <p className="text-lg text-gray-500">MT Warehouse Capacity</p>
                     </div>
                 </div>

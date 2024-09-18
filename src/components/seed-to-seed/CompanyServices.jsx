@@ -30,32 +30,32 @@ const CompanyServices = () => {
     {
       icon: <FaShieldAlt className="text-3xl text-blue-500" />,
       title: 'IP Protection',
-      description: 'We ensure secure handling and confidentiality of seed IP, safeguarding your valuable intellectual property throughout the entire process.'
+      description: 'We prioritize the secure management and confidentiality of intellectual property, ensuring that your innovations are protected throughout our processes.'
     },
     {
       icon: <FaSeedling className="text-3xl text-green-500" />,
       title: 'Seed Handling',
-      description: 'Our comprehensive seed services include production, farming, packaging, and storage, ensuring the highest quality from start to finish.'
+      description: 'Our seed handling services encompass the full spectrum from production to packaging, ensuring superior quality and care at every stage.'
     },
     {
       icon: <FaCheckCircle className="text-3xl text-red-500" />,
-      title: 'Quality Checks',
-      description: 'We enforce stringent quality control measures to maintain top industry standards, guaranteeing premium seeds for our clients.'
+      title: 'Quality Assurance',
+      description: 'We apply rigorous quality control measures to meet and exceed industry standards, delivering seeds of the highest caliber.'
     },
     {
       icon: <FaCogs className="text-3xl text-purple-500" />,
       title: 'Customized Solutions',
-      description: 'With over 35 years of experience, we provide tailored processing lines to meet your specific seed production needs.'
+      description: 'With extensive experience, we offer bespoke processing solutions designed to cater to your specific seed production needs.'
     },
     {
       icon: <FaGlobeAmericas className="text-3xl text-yellow-500" />,
       title: 'Field Production',
-      description: 'We select global seed farms to ensure optimal yield and quality, leveraging diverse climates and growing conditions.'
+      description: 'We utilize a global network of seed farms to optimize yield and quality, taking advantage of various climatic and growing conditions.'
     },
     {
       icon: <FaIndustry className="text-3xl text-indigo-500" />,
-      title: 'Global Facilities',
-      description: 'Our advanced technology and global grower network make us industry leaders in seed production and processing.'
+      title: 'Advanced Facilities',
+      description: 'Our cutting-edge technology and international grower partnerships position us as leaders in seed production and processing.'
     }
   ];
 
